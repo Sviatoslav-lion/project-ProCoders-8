@@ -11,8 +11,14 @@
 @import url('./animations.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+@import url('./01-header.css');
+@import url('./02-hero.css');
+@import url('./03-about_me.css');
+@import url('./04-benefits.css');
+@import url('./05-projects.css');
+@import url('./06-faq.css');
+@import url('./07-covers.css');
+@import url('./08-reviews.css');
+@import url('./09-work_together.css');
+@import url('./10-menu.css');
+@import url('./11-pop-up.css');
