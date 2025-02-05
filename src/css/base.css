@@ -1,10 +1,3 @@
-/*
-.inter-tight-<uniquifier> {
-  font-family: "Inter Tight", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
 ------------------------------------------------------------------------- */
 
 /* inter regular */
@@ -44,3 +37,115 @@
 }
 
 /* ---------------------------------------------------------------------------- */
+:root {
+  --font-family: "Inter Tight", sans-serif;
+
+	--background: #1c1d20;
+	--cards: #242527;
+	--arrow: #3b3b3b;
+	--button-text: #ed3b44;
+	--main-text: #fafafa;
+}
+
+/* Styles for Mobile devices */
+body {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color:  var(--main-text);
+
+  background-color: var(--cards);
+}
+
+h1 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-text);
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+}
+
+button {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+
+
+  border-radius: 60px;
+  padding: 13px 32px;
+  width: 141px;
+  height: 45px;
+
+  background: var(--button-text);
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+
+  button {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: var(--main-text);
+    font-family: var(--font-family);
+
+    border-radius: 60px;
+    padding: 18px 50px;
+    width: 177px;
+    height: 55px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+
+}
+
+/* Common classes */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
