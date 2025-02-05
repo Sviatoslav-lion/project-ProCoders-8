@@ -1,0 +1,64 @@
+/* Styles for Mobile devices 
+section {
+    padding: 32px 0;
+  }
+  .container {
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  /* Styles for Tablet devices
+  @media only screen and (min-width: 768px) {
+    section {
+      padding: 48px 0;
+    }
+    .container {
+      max-width: 768px;
+      padding: 0 32px;
+    }
+  }
+  /* Styles for Desktop devices 
+  @media only screen and (min-width: 1440px) {
+    section {
+      padding: 82px 0;
+    }
+    .container {
+      max-width: 1440px;
+    }
+  }
+  */
+
+/* Styles for Mobile devices  */
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.project-list-item-container {
+  background-color: #fafafa;
+}
+.projects-tag-text {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #1c1d20;
+
+  height: 45px;
+}
+.projects-large-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  color: #1c1d20;
+}
+.projects-picture-container {
+  background-color: green;
+}
+.project-card-image {
+  height: 195px;
+  width: 311px;
+}
