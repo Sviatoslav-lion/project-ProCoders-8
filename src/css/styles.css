@@ -31,15 +31,15 @@
         align-items: center;
         justify-content: start;
     }
-    .icon {
+    .icon-test {
         text-align: center;
     }
-    .icon svg {
-        width: 50px;
+    .icon-test svg {
+        width: 90px;
         height: 50px;
         fill: currentColor;
     }
-    .icon-label {
+    .icon-label-test {
         margin-top: 5px;
         font-size: 14px;
     }
