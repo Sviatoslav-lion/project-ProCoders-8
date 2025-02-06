@@ -22,3 +22,24 @@
 @import url('./09-work_together.css');
 @import url('./10-menu.css');
 @import url('./11-pop-up.css');
+
+/* перегляд icons */
+    .icon-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: start;
+    }
+    .icon {
+        text-align: center;
+    }
+    .icon svg {
+        width: 50px;
+        height: 50px;
+        fill: currentColor;
+    }
+    .icon-label {
+        margin-top: 5px;
+        font-size: 14px;
+    }
