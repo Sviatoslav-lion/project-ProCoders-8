@@ -19,7 +19,28 @@
 }
 
 .header-nav {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-desk-tabl-btn:hover,
+.menu-desk-tabl-btn:focus
+{
+  color: #ed3b44;
+  outline: none;
+}
+
+.menu-item a{
+  outline: none;
+  
+}
+
+.menu-item a:hover,
+.menu-item a:focus{
+    color: #ed3b44;
+    
 }
 
 .menu-desk-tabl-btn {
@@ -34,9 +55,32 @@
   color: #fafafa;
 }
 
-.item-menu-hidden {
-  display: none;
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  gap: 5px;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
 }
+
+.header-menu.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+
+
+
 
 .order-btn {
   display: flex;
@@ -50,6 +94,22 @@
   color: #fafafa;
   align-items: center;
   justify-content: center;
+}
+
+.order-btn:hover,
+.order-btn:focus{
+background-color: #e0373f;
+outline: none;
+}
+
+.header-menu-mobile{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: unset;
+  height: unset;
 }
 
 @media screen and (max-width: 768px) {
