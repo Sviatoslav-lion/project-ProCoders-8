@@ -12,9 +12,9 @@
   background-repeat: round;
 }
 .hero-title {
-  min-width: 343px;
-  min-height: 250px;
-  margin-top: 281px;
+  width: 343px;
+  max-height: 250px;
+  margin-top: 249px;
   margin-bottom: 212px;
 }
 .hero-list {
@@ -55,9 +55,9 @@
     background-repeat: round;
   }
   .hero-title {
-    min-width: 632px;
-    min-height: 450px;
-    margin-top: 300px;
+    width: 632px;
+    max-height: 450px;
+    margin-top: 252px;
     margin-bottom: 187px;
   }
   .hero-list {
@@ -89,18 +89,21 @@
 /*=================================Desktop=======================*/
 @media only screen and (min-width: 1440px) {
   .hero {
+    max-height: 900px;
     background-image: url('../images/hero/hero-desktop.png');
-    background-size: cover;
-    background-repeat: round;
+    background-size: 728px 900px;
+    background-repeat: no-repeat;
   }
   .hero-title {
-    min-width: 1084px;
-    min-height: 270px;
+    width: 1084px;
+    max-height: 270px;
+    margin-top: 218px;
     margin-left: 146px;
     margin-bottom: 243px;
   }
   .hero-list {
     margin-left: 903px;
+    margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
