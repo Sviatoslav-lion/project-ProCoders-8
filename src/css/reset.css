@@ -33,6 +33,7 @@ a {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 img {
@@ -43,4 +44,8 @@ img {
 
 section {
   text-decoration: none;
+}
+
+body {
+  margin: 0;
 }
