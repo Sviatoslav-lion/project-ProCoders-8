@@ -1,58 +1,151 @@
-<section class="section-base">
-    <div class="container">
-        03-about_me
-        <h2>Перегляд всіх іконок</h2>
-    <div class="icon-container">
-        <div class="icon-test">
-            <svg><use href="/images/sprite.svg#javascript"></use></svg>
-            <div class="icon-label-test">javascript</div>
-        </div>
-        <div class="icon-test">
-            <svg><use href="/images/sprite.svg#logo"></use></svg>
-            <div class="icon-label-test">logo</div>
-        </div>
-        <div class="icon-test">
-            <svg><use href="/images/sprite.svg#menu"></use></svg>
-            <div class="icon-label-test">menu</div>
-        </div>
-        <div class="icon-test">
-            <svg><use href="/images/sprite.svg#cross"></use></svg>
-            <div class="icon-label-test">cross</div>
-        </div>
-        <div class="icon-test">
-            <svg><use href="/images/sprite.svg#up"></use></svg>
-            <div class="icon-label-test">up</div>
-        </div>
-        <div class="icon-test">
-            <svg><use href="/images/sprite.svg#down"></use></svg>
-            <div class="icon-label-test">down</div>
-        </div>
-        <div class="icon-test">
-            <svg><use href="/images/sprite.svg#arrow_right"></use></svg>
-            <div class="icon-label-test">arrow_right</div>
-        </div>
-        <div class="icon-test">
-            <svg><use href="/images/sprite.svg#arrow_left"></use></svg>
-            <div class="icon-label-test">arrow_left</div>
-        </div>
-        <div class="icon-test">
-            <svg><use href="/images/sprite.svg#expertise"></use></svg>
-            <div class="icon-label-test">expertise</div>
-        </div>
-        <div class="icon-test">
-            <svg><use href="/images/sprite.svg#communication"></use></svg>
-            <div class="icon-label-test">communication</div>
-        </div>
-        <div class="icon-test">
-            <svg><use href="/images/sprite.svg#art"></use></svg>
-            <div class="icon-label-test">art</div>
-        </div>
-        <div class="icon-test">
-            <svg><use href="/images/sprite.svg#urgent_execution"></use></svg>
-            <div class="icon-label-test">urgent_execution</div>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
 
-    </div>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-</section>
+</head>
+
+<body>
+
+
+<div class="container">
+    <div class="text-box">
+        <p>
+            I WORK WITH PEOPLE ALL OVER THE WORLD TO CREATE
+            <span class="highlight">IMPRESSIVE</span> AND
+            <span class="functional">FUNCTIONAL</span>
+            <span class="gray">WEBSITES</span> THAT REFLECT EACH CLIENT'S UNIQUE PERSONALITY.
+        </p>
+    </div>
+    <div class="image-box">
+        <img src="./images/about-me/portfolio2.jpg" alt="Professional Man at Laptop">
+        <source srcset="./images/about-me/portfolio2.jpg" media="(min-width:768px)">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <ul class="accordion">
+    <li class="accordion-item open">
+            <div class="accordion-header"><span>ABOUT ME </span> <span class="arrow">
+                <svg class="icon closed" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#FAFAFA" stroke-opacity="0.2" />
+                    <path d="M26 18.5L21 23.5L16 18.5" stroke="#FAFAFA" stroke-width="2" />
+                </svg>
+                <svg class="icon open" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#FAFAFA" stroke-opacity="0.2" />
+                    <path d="M26 23.5L21 18.5L16 23.5" stroke="#FAFAFA" stroke-width="2" />
+                </svg>
+            </span> </div>
+            <div class="left"> </div>
+            <div class="accordion-content">
+                <p class="about-me-text">I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have
+                    an understanding of
+                    different programming languages and technologies, always ready to improve my skills. I always follow
+                    the latest trends
+                    and look for unconventional, creative solutions to problems. I have a high level of analytical
+                    skills and am able to
+                    effectively solve even the most difficult tasks encountered on the way.</p>
+
+                <p class="about-me-text">Able to work both independently and in a team. I can effectively cooperate with colleagues,
+                    exchanging ideas and finding
+                    optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful
+                    situations, while
+                    maintaining a high quality of work. I am always looking for opportunities for self-improvement. I
+                    actively study new
+                    technologies and practices to stay abreast of the latest innovations. I have a strong understanding
+                    of various
+                    programming languages, frameworks and architectural concepts that allow me to create efficient and
+                    scalable software.</p>
+            </div>
+        </li>
+        <li class="accordion-item">
+            <div class="accordion-header"><span>ROLE</span> <span class="arrow">
+                <svg class="icon closed" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#FAFAFA" stroke-opacity="0.2" />
+                    <path d="M26 18.5L21 23.5L16 18.5" stroke="#FAFAFA" stroke-width="2" />
+                </svg>
+                <svg class="icon open" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#FAFAFA" stroke-opacity="0.2" />
+                    <path d="M26 23.5L21 18.5L16 23.5" stroke="#FAFAFA" stroke-width="2" />
+                </svg>
+            </span></div>
+                <div class="left"> </div>
+            <div class="accordion-content">
+                <p class="role-text">Frontend Development</p>
+                <p class="role-text">HeadlessCMS, Wordpress</p>
+                <p class="role-text">Blender (enjoy)</p>
+            </div>
+        </li>
+        <li class="accordion-item">
+            <div class="accordion-header"><span>EDUCATION</span><span class="arrow">
+                <svg class="icon closed" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#FAFAFA" stroke-opacity="0.2" />
+                    <path d="M26 18.5L21 23.5L16 18.5" stroke="#FAFAFA" stroke-width="2" />
+                </svg>
+                <svg class="icon open" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#FAFAFA" stroke-opacity="0.2" />
+                    <path d="M26 23.5L21 18.5L16 23.5" stroke="#FAFAFA" stroke-width="2" />
+                </svg>
+            </span></div>
+            
+            <div class="accordion-content">
+                <p class="education-text">2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York</p>
+                <p class="education-text">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p>
+                <p class="education-text">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+            </div>
+        </li>
+    </ul>
+
+
+
+<div class="skills-container">
+    <div class="swiper">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><span>HTML/CSS</span></li>
+            <li class="swiper-slide"><span>JavaScript</span></li>
+            <li class="swiper-slide"><span>React</span></li>
+            <li class="swiper-slide"><span>Node.js</span></li>
+            <li class="swiper-slide"><span>React Native</span></li>
+            <li class="swiper-slide"><span>Soft skills</span></li>
+        </ul>
+    </div>
+    <div class="swiper-button-next">
+        <svg width="28px" height="28px">
+            <use xlink:href="spite.svg#icon-next"></use>
+
+            
+        </svg>
+
+    </div> <!-- Стрілка для переходу до наступного елементу -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
