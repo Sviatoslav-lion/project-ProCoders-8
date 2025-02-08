@@ -1,5 +1,3 @@
-------------------------------------------------------------------------- */
-
 /* inter regular */
 @font-face {
   font-family: 'Inter';
@@ -43,7 +41,8 @@
 	--background: #1c1d20;
 	--cards: #242527;
 	--arrow: #3b3b3b;
-	--button-text: #ed3b44;
+	--button-text: #0041E8;
+  --button-hover: #0633a5;
 	--main-text: #fafafa;
 }
 
