@@ -102,7 +102,7 @@
 
 .mobile-menu-nav-link:hover,
 .mobile-menu-nav-link:focus {
-  color: #ed3b44;
+  color: #0633A5;
   outline: none;
 }
 
@@ -111,9 +111,9 @@
   font-size: 14px;
   letter-spacing: -0.02em;
   color: #fafafa;
-  background-color: #ed3b44;
+  background-color: #0041E8;
   border-radius: 60px;
-  padding: 14px 31px;
+  padding: 10.5px 31px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -121,7 +121,7 @@
 
 .mobile-order-btn:hover,
 .mobile-order-btn:focus {
-  background-color: #e0373f;
+  background-color: #0633A5;
   outline: none;
 }
 

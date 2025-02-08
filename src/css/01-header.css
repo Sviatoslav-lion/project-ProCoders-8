@@ -27,7 +27,7 @@
 
 .menu-desk-tabl-btn:hover,
 .menu-desk-tabl-btn:focus {
-  color: #ed3b44;
+  color: #0633A5;
   outline: none;
 }
 
@@ -37,7 +37,7 @@
 
 .menu-item a:hover,
 .menu-item a:focus {
-  color: #ed3b44;
+  color: #0633A5;
 }
 
 .menu-desk-tabl-btn {
@@ -77,9 +77,9 @@
 .order-btn {
   display: flex;
   border-radius: 60px;
-  padding: 18px 24px;
+  padding: 15.5px 24px;
 
-  background-color: #ed3b44;
+  background-color: #0041E8;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
@@ -90,7 +90,7 @@
 
 .order-btn:hover,
 .order-btn:focus {
-  background-color: #e0373f;
+  background-color: #0633A5;
   outline: none;
 }
 
