@@ -43,8 +43,11 @@ section {
 .projects-heading {
   margin-bottom: 32px;
 }
+.projects-card-container {
+  margin-bottom: 32px;
+}
 /* project card -> upper container START */
-.project-list-item-container {
+.project-upper-container {
   background-color: #fafafa;
 
   padding: 32px 32px 32px 32px;
@@ -109,21 +112,27 @@ section {
 .projects-link-button:focus {
   background-color: #667fc0;
 }
-/* project card -> upper container END */
+/* project card -> upper part END */
 
-/* project card -> lower container START */
+/* project card -> lower part START */
 .projects-picture-container {
+  display: flex;
   background-color: #242527;
-
-  min-height: 395px;
+  justify-content: center;
 
   border-radius: 0 0 24px 24px;
   padding: 100px 16px 100px 16px;
-  margin-bottom: 32px;
-}
-
-.project-card-image {
-  height: 195px;
-  width: 311px;
 }
 /* project card -> lower container END */
+/*Custom Sliders START */
+.projects-sliders-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+.slider-button.disabled {
+  opacity: 0.5; /* Робимо кнопку напівпрозорою */
+  cursor: not-allowed; /* Змінюємо курсор */
+  pointer-events: none; /* Вимикаємо кліки */
+}

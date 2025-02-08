@@ -1,87 +1,248 @@
 <section class="projects-section">
   <div class="container projects-container">
     <h2 class="projects-heading">PROJECTS</h2>
-    <!--Project Card container-->
-    <div class="projects-card-container">
-      <ul class="projects-card-list">
-        <!--Project Card <li> -->
-        <li class="projects-list-item">
-          <div class="project-list-item-container">
-            <div class="projects-tags-container">
-              <ul class="projects-tags-list">
-                <li class="projects-tag-item">
-                  <p class="projects-tag-text">#react</p>
-                </li>
-                <li class="projects-tag-item">
-                  <p class="projects-tag-text">#js</p>
-                </li>
-                <li class="projects-tag-item">
-                  <p class="projects-tag-text">#node js</p>
-                </li>
-                <li class="projects-tag-item">
-                  <p class="projects-tag-text">#git</p>
-                </li>
-              </ul>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <ul class="swiper-wrapper">
+        <!-- Slides -->
+        <!--slide 1-->
+        <li class="swiper-slide">
+          <div class="projects-card-container">
+            <!--THIS Project Card separeted into 2 parts (upper and lower(picture container) if mobile device,else left and right if desktop or tablet)-->
+            <!--Project Card container(upper/left part)-->
+            <div class="project-upper-container">
+              <div class="projects-tags-container">
+                <ul class="projects-tags-list">
+                  <li class="projects-tag-item">
+                    <p class="projects-tag-text">#react</p>
+                  </li>
+                  <li class="projects-tag-item">
+                    <p class="projects-tag-text">#js</p>
+                  </li>
+                  <li class="projects-tag-item">
+                    <p class="projects-tag-text">#node js</p>
+                  </li>
+                  <li class="projects-tag-item">
+                    <p class="projects-tag-text">#git</p>
+                  </li>
+                </ul>
+              </div>
+              <!--large text-->
+              <p class="projects-large-text">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+              <!--to see projects on git button (as link)-->
+              <a
+                class="projects-link-button"
+                href="https://github.com/Sviatoslav-lion/project-ProCoders-8"
+                target="_blank"
+              >
+                See project
+              </a>
             </div>
-            <!--large text-->
-            <p class="projects-large-text">
-              Programming Across Borders: Ideas, Technologies, Innovations
-            </p>
-            <!--to see projects on git button (as link)-->
-            <a
-              class="projects-link-button"
-              href="https://github.com/Sviatoslav-lion/project-ProCoders-8"
-              target="_blank"
-            >
-              See project
-            </a>
+            <!--Picture container(lower part)-->
+            <div class="projects-picture-container">
+              <picture>
+                <source
+                  srcset="
+                    ../images/projects-section-images/desktop-tablet/lib_app_tab-desk.jpg    1x,
+                    ../images/projects-section-images/desktop-tablet/lib_app_tab-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <source
+                  srcset="
+                    ../images/projects-section-images/desktop-tablet/lib_app_tab-desk.jpg    1x,
+                    ../images/projects-section-images/desktop-tablet/lib_app_tab-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ../images/projects-section-images/mobile/lib_app_mob.jpg    1x,
+                    ../images/projects-section-images/mobile/lib_app_mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="project-card-image"
+                  src="../images/projects-section-images/desktop-tablet/lib_app_mob.jpg"
+                  alt="picture of project"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <!--Picture container END-->
           </div>
-          <!--Picture container-->
-          <div class="projects-picture-container">
-            <img
-              class="project-card-image"
-              src="../images/projects-section-images/lib_app_img.jpg"
-              alt="picture of project"
-              loading="lazy"
-            />
+        </li>
+        <!--slide 2-->
+        <li class="swiper-slide">
+          <div class="projects-card-container">
+            <!--THIS Project Card separeted into 2 parts (upper and lower(picture container) if mobile device,else left and right if desktop or tablet)-->
+            <!--Project Card container(upper/left part)-->
+            <div class="project-upper-container">
+              <div class="projects-tags-container">
+                <ul class="projects-tags-list">
+                  <li class="projects-tag-item">
+                    <p class="projects-tag-text">#react</p>
+                  </li>
+                  <li class="projects-tag-item">
+                    <p class="projects-tag-text">#js</p>
+                  </li>
+                  <li class="projects-tag-item">
+                    <p class="projects-tag-text">#node js</p>
+                  </li>
+                  <li class="projects-tag-item">
+                    <p class="projects-tag-text">#git</p>
+                  </li>
+                </ul>
+              </div>
+              <!--large text-->
+              <p class="projects-large-text">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+              <!--to see projects on git button (as link)-->
+              <a
+                class="projects-link-button"
+                href="https://github.com/Sviatoslav-lion/project-ProCoders-8"
+                target="_blank"
+              >
+                See project
+              </a>
+            </div>
+            <!--Picture container-->
+            <div class="projects-picture-container">
+              <picture>
+                <source
+                  srcset="
+                    ../images/projects-section-images/desktop-tablet/dog_tab-desk.jpg    1x,
+                    ../images/projects-section-images/desktop-tablet/dog_tab-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <source
+                  srcset="
+                    ../images/projects-section-images/desktop-tablet/dog_tab-desk.jpg    1x,
+                    ../images/projects-section-images/desktop-tablet/dog_tab-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ../images/projects-section-images/mobile/dog_mobile.jpg    1x,
+                    ../images/projects-section-images/mobile/dog_mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="project-card-image"
+                  src="../images/projects-section-images/desktop-tablet/dog_tab-desk.jpg"
+                  alt="picture of project"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <!--Picture container END-->
           </div>
-          <!--Picture container END-->
+        </li>
+        <!--slide 3-->
+        <li class="swiper-slide">
+          <div class="projects-card-container">
+            <!--THIS Project Card separeted into 2 parts (upper and lower(picture container) if mobile device,else left and right if desktop or tablet)-->
+            <!--Project Card container(upper/left part)-->
+            <div class="project-upper-container">
+              <div class="projects-tags-container">
+                <ul class="projects-tags-list">
+                  <li class="projects-tag-item">
+                    <p class="projects-tag-text">#react</p>
+                  </li>
+                  <li class="projects-tag-item">
+                    <p class="projects-tag-text">#js</p>
+                  </li>
+                  <li class="projects-tag-item">
+                    <p class="projects-tag-text">#node js</p>
+                  </li>
+                  <li class="projects-tag-item">
+                    <p class="projects-tag-text">#git</p>
+                  </li>
+                </ul>
+              </div>
+              <!--large text-->
+              <p class="projects-large-text">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+              <!--to see projects on git button (as link)-->
+              <a
+                class="projects-link-button"
+                href="https://github.com/Sviatoslav-lion/project-ProCoders-8"
+                target="_blank"
+              >
+                See project
+              </a>
+            </div>
+            <!--Picture container-->
+            <div class="projects-picture-container">
+              <picture>
+                <source
+                  srcset="
+                    ../images/projects-section-images/desktop-tablet/edu_app_tab-desk.jpg    1x,
+                    ../images/projects-section-images/desktop-tablet/edu_app_tab-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <source
+                  srcset="
+                    ../images/projects-section-images/desktop-tablet/edu_app_tab-desk.jpg    1x,
+                    ../images/projects-section-images/desktop-tablet/edu_app_tab-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ../images/projects-section-images/mobile/edu_app_mob.jpg    1x,
+                    ../images/projects-section-images/mobile/edu_app_mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="project-card-image"
+                  src="../images/projects-section-images/desktop-tablet/edu_app_tab-desk.jpg"
+                  alt="picture of project"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <!--Picture container END-->
+          </div>
         </li>
       </ul>
+      <!-- If we need navigation buttons 
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>-->
     </div>
-    <!--Sliders-->
+    <!--Custom Sliders -->
     <div class="projects-sliders-container">
       <ul class="projects-sliders-list">
         <li class="projects-sliders-item">
-          <button class="slider-button">
+          <button class="slider-button prev-button-js">
             <svg class="slider-icon" width="24" height="24">
-              <use href="#"></use>
+              <use href="../images/sprite.svg#arrow_left"></use>
             </svg>
           </button>
         </li>
 
         <li class="projects-sliders-item">
-          <button class="slider-button">
+          <button class="slider-button next-button-js">
             <svg class="slider-icon" width="24" height="24">
-              <use href="#"></use>
+              <use href="../images/sprite.svg#arrow_right"></use>
             </svg>
           </button>
         </li>
       </ul>
     </div>
+    <!--Custom Sliders END -->
   </div>
 </section>
-
-<!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide"></div>
-    <div class="swiper-slide"></div>
-    <div class="swiper-slide"></div>
-  </div>
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
