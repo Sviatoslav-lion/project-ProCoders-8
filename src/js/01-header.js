@@ -1,19 +1,44 @@
-const menuButton = document.querySelector(".menu-desk-tabl-btn");
-const menuList = document.querySelector(".header-menu");
 
-menuButton.addEventListener("click", () => {
-  menuList.classList.toggle("is-open");
-});
-document.querySelectorAll('.header-menu a').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault(); // Забороняємо стандартну поведінку посилання
+document.addEventListener("DOMContentLoaded", () => {
+  const body = document.body;
+  const desktopMenuBtn = document.querySelector(".menu-desk-tabl-btn");
+  const desktopMenu = document.querySelector(".header-menu");
+  const mobileMenu = document.querySelector("[data-menu]");
+  const openMenuBtn = document.querySelector("[data-menu-open]");
+  const closeMenuBtn = document.querySelector("[data-menu-close]");
+  const menuLinks = document.querySelectorAll(".header-menu a, .order-btn, .mobile-menu-nav-link, .mobile-order-btn");
 
-    const targetId = this.getAttribute('href'); // Отримуємо значення href
-    const targetSection = document.querySelector(targetId); // Знаходимо відповідну секцію
+  
+  function toggleMenu(menu) {
+    menu.classList.toggle("is-open");
+    body.classList.toggle("no-scroll");
+  }
 
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' }); // Плавно скролимо
-    }
+  
+  desktopMenuBtn?.addEventListener("click", () => toggleMenu(desktopMenu));
+
+  
+  openMenuBtn?.addEventListener("click", () => toggleMenu(mobileMenu));
+  closeMenuBtn?.addEventListener("click", () => toggleMenu(mobileMenu));
+
+  
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+
+      
+      if (mobileMenu.classList.contains("is-open")) {
+        toggleMenu(mobileMenu);
+      } else if (desktopMenu.classList.contains("is-open")) {
+        toggleMenu(desktopMenu);
+      }
+    });
   });
 });
-

@@ -26,21 +26,18 @@
 }
 
 .menu-desk-tabl-btn:hover,
-.menu-desk-tabl-btn:focus
-{
+.menu-desk-tabl-btn:focus {
   color: #ed3b44;
   outline: none;
 }
 
-.menu-item a{
+.menu-item a {
   outline: none;
-  
 }
 
 .menu-item a:hover,
-.menu-item a:focus{
-    color: #ed3b44;
-    
+.menu-item a:focus {
+  color: #ed3b44;
 }
 
 .menu-desk-tabl-btn {
@@ -63,7 +60,7 @@
   transform: translateY(-10px);
   pointer-events: none;
   transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
-font-weight: 500;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
   gap: 5px;
@@ -76,11 +73,6 @@ font-weight: 500;
   transform: translateY(0);
   pointer-events: auto;
 }
-
-
-
-
-
 
 .order-btn {
   display: flex;
@@ -97,12 +89,12 @@ font-weight: 500;
 }
 
 .order-btn:hover,
-.order-btn:focus{
-background-color: #e0373f;
-outline: none;
+.order-btn:focus {
+  background-color: #e0373f;
+  outline: none;
 }
 
-.header-menu-mobile{
+.header-menu-mobile {
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -112,14 +104,14 @@ outline: none;
   height: unset;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-menu,
   .order-btn,
   .menu-desk-tabl-btn {
     display: none;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .header-menu-mobile {
     display: none;
   }
