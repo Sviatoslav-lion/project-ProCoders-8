@@ -1,7 +1,7 @@
 /* =================================Mobile=======================*/
 .hero .container {
   position: relative;
-  z-index: 99;
+  z-index: 98;
 }
 .hero.hero-grad {
   position: relative;
