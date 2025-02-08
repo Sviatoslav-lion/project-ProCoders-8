@@ -61,10 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         breakpoints: {
-            768: { // Для планшетів 
+            768: { 
                 slidesPerView: 3,
             },
-            1440: { // Для комп'ютерів 
+            1440: { 
                 slidesPerView: 6,
             }
         }
