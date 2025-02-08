@@ -186,7 +186,7 @@ focus {
     max-width: 494px;
   }
   .projects-link-button {
-    width: 171px;
+    width: 177px;
     height: 55px;
   }
   /* project card -> Picture container START */
@@ -199,6 +199,11 @@ focus {
   .slider-button {
     width: 68px;
     height: 68px;
+
+    padding: 18px;
+  }
+  .projects-sliders-list {
+    gap: 20px;
   }
   /* Custom Sliders END */
 }
@@ -224,12 +229,5 @@ focus {
   .projects-picture-container {
     padding: 120px 37px 120px 37px;
     border-radius: 0 24px 24px 0;
-  }
-  .projects-link-button {
-    width: 177px;
-  }
-
-  .slider-button {
-    padding: 18px;
   }
 }
