@@ -13,19 +13,15 @@
   --desktop-item-height: 314px;
   --desktop-width: 1413px;
   --desktop-height: 961px;
-
 }
 
 
 .covers h2 {
-  font-size: 40px;
-  color: #605152;
-  z-index: 10;
   display: none;
 }
 .covers {
-  max-width: 376px;
-  max-height: 507px;
+ 
+  width: 100%;
   position: relative;
  
   margin: 0 auto;
@@ -33,14 +29,21 @@
   overflow: hidden;
   z-index: 1;
 }
+.covers-container {
+  max-width: 376px;
+  max-height: 507px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
 .covers-list::before,
-.covers::after,
-.covers::before {
+.covers-container::after,
+.covers-container::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10%;
 
   width: 350px;
   height: 350px;
@@ -48,13 +51,13 @@
   border-radius: 50%;
   z-index: -1;
 }
-.covers::after {
-  top: 0;
-  left: -20%;
+.covers-container::after {
+  top: 10%;
+  left: 10%;
 }
-.covers-list::before{
-  top: 50%;
-  left: 120%;
+.covers ::before{
+  top: 70%;
+  left: 70%;
 }
 
 
@@ -70,21 +73,21 @@
 .covers-list li:nth-child(3) {
   transform: translateX(-148px);
 } 
-.covers-list li:nth-child(3)  {
+/* .covers-list li:nth-child(3)  {
    background: linear-gradient(10deg, #0424f7 0%, #0424f7 10%, transparent 100%);
    background-color: #d4adde; 
   
   box-shadow: 0px 3px 3px 0px #4957f6,0px -3px 5px 0px #f9efe0, 0px -15px 10px 0px hsl(35, 72%, 80%), 0px -19px 15px 0px hsl(35, 64%, 49%);
 
-} 
+}  */
 
 .covers-item {
   position: relative;
 width: 100%;
-min-width: calc(var(--mob-item-width) * var(--quantity) + 80px);
+min-width: calc(var(--mob-item-width) * var(--quantity) + 560px);
 min-height: 162px;
 
- margin-block-end: 20px;
+ margin-block-end: 32px;
 
 }
 
@@ -94,14 +97,15 @@ min-height: 162px;
   padding: 0;
   margin: 0;
 
-aspect-ratio: 283 / 162;
+
 max-width: 283px;
 max-height: 162px;
   transition: all 0.5s;
-  /* overflow: hidden; */
+
+
 }
 .covers-picture:not(:last-child) {
-  margin-inline-end: 15px;
+  margin-inline-end: 32px;
 }
 .covers-picture img {
   width: 100%;
@@ -109,18 +113,20 @@ max-height: 162px;
   
   max-width: 283px;
   max-height: 162px;
-  aspect-ratio: 283 / 162;
+
   object-fit: cover;
   }
 
 .covers-animation {
   position: absolute;
+ top: 100px;
   left: 0;
+
   animation: covers-run 25s linear infinite;
   animation-delay: calc((25s / var(--quantity)) * (var(--position) * -1));
 border-radius: 999px;
 margin: 0;
-overflow: hidden;
+
 } 
 
 
@@ -139,67 +145,87 @@ to {
   animation-play-state: paused;
 }
 
-@media screen and (min-width: 769px){
+
+
+
+@media screen and (min-width: 375px) {
   .covers {
+    max-height: 507px;
+  }
+  .covers-container {
     max-width: 772px;
-    max-height: 963px;
+    max-height: 507px;
+  }
+  .covers-item {
+    /* min-height: 314px; */
+
+    min-width: calc(var(--tablet-item-width) * var(--quantity) + 560px);
+  }
+}
+
+@media screen and (min-width: 768px){
+  .covers {
+    max-height: 960px;
+  }
+  .covers-container {
+    max-width: 1440px;
+    max-height: 960px;
   }
 .covers-list {
   height: var(--tablet-height);
-  margin-left: -544px;
-  padding-top: 350px;
-
+  /* margin-left: -544px; */
 }
   .covers-item {
-    min-height: 314px;
-    min-width: 544px;
-    min-width: calc(var(--tablet-item-width) * var(--quantity));
-  }
-  .covers-list li:nth-child(1) {
-    margin-top: -650px;
+    max-height: 314px;
+    max-width: 544px;
+    min-width: calc(var(--tablet-item-width) * var(--quantity) + 260px);
+    margin-block-end: 39px;
   }
 
-.covers-list li:nth-child(1) {
-  transform: scale(1.1);
-
-}
-.covers-list li:nth-child(2) {
-  transform: scale(0.7);
-
-}
-.covers-list li:nth-child(3) {
-  transform: scale(1.1);
-
-  
-}
-.covers-list li:nth-child(4) {
-  transform: scale(0.6);
- 
-  
-} 
 
 
-  .covers-picture{
+  .covers-picture {
     max-width: 544px;
 max-height: 314px;
-
+margin-inline-end: 37px;
    
   }
   .covers-picture img {
 
-    max-width: 544px;
+    min-width: 544px;
 max-height: 314px;
   }
-}  @media screen and (min-width: 1200px){
+}  @media screen and (min-width: 1440px) {
   .covers {
-    max-width: 1438px;
+
+    max-height: 960px;
+  }
+  .covers-container {
+    max-width: 1440px;
     max-height: 962px;
   }
 .covers-list {
   height: var(--desktop-height);
 }
   .covers-item {
-    min-width: calc(var(--desktop-item-width) * var(--quantity));
+    min-width: calc(var(--desktop-item-width) * var(--quantity) + 1200px);
   }
 
+  .covers-picture {
+    margin-inline-end: 39px;
+  }
 } 
+.cover-run {
+animation: run-cover 10s linear infinite;
+}
+@keyframes run-cover {
+  0% {
+    transform: translateX(-10%);
+   
+  }
+
+  100% {
+    transform: translateX(-150%);
+   
+  }
+}
