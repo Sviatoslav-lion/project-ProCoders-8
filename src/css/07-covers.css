@@ -25,7 +25,7 @@
   position: relative;
  
   margin: 0 auto;
-  background-color:#242527;
+
   overflow: hidden;
   z-index: 1;
 }
@@ -102,15 +102,7 @@ max-height: 162px;
   object-fit: cover;
   }
 
-/* .covers-animation {
-  position: absolute;
- top: 100px;
-  left: 0;
-  animation: covers-run 25s linear infinite;
-  animation-delay: calc((25s / var(--quantity)) * (var(--position) * -1));
-border-radius: 999px;
-margin: 0;
-}  */
+
 
 
 .covers-item:hover .covers-picture {
