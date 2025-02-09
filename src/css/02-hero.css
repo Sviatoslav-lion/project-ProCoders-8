@@ -5,7 +5,7 @@
 }
 .hero.hero-grad {
   position: relative;
-  min-height: 100%;
+  max-height: 812px;
   padding: 32px 0;
   width: 100vw;
   background: linear-gradient(-90deg, #1c1d20 50%, #001958 68%, #0041e8 100%);
@@ -70,6 +70,9 @@
 /*================================/Mobile=======================*/
 /*=================================Tablet=======================*/
 @media only screen and (min-width: 768px) {
+  .hero.hero-grad {
+    max-height: 1024px;
+  }
   .hero::before {
     background: url('/images/hero/hero-tablet.png') no-repeat left center;
     background-size: cover;
@@ -112,6 +115,9 @@
 /*=================================/Tablet=======================*/
 /*=================================Desktop=======================*/
 @media only screen and (min-width: 1440px) {
+  .hero.hero-grad {
+    max-height: 900px;
+  }
   .hero::before {
     background: url('/images/hero/hero-desktop.png') no-repeat left center;
     background-size: cover;
