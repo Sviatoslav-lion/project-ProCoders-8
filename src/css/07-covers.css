@@ -188,6 +188,7 @@ max-height: 314px;
 .cover-run {
 animation: run-cover 10s linear infinite;
 }
+
 @keyframes run-cover {
   0% {
     transform: translateX(-10%);
