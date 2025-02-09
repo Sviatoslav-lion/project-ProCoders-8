@@ -97,8 +97,8 @@ margin-bottom: 8px;
 
 .benefits-item-text p {
   font-weight: 500;
-  line-height:1.5; /* 150% */
-  letter-spacing: -0.32px;
+  line-height: 1.5; /* 150% */
+  letter-spacing: -0.02em;
   color: var(--col-benefits-item-text);
   margin: 0;
 }
@@ -142,76 +142,72 @@ max-width: 322px;
 }
 /* btn */
 .btn-benefit {
+  position: relative;
   border-radius: 60px;
-  padding: 18px 36px;
   border: 1px solid rgba(250, 250, 250, 0.20);
+  transition: all 0.3s;
+  z-index: 3;
+ width: 186px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.btn-benefit:focus,
+.btn-benefit:hover {
+  border: 1px solid #FAFAFA;
+}
+
 
 
 /* btn shine */
 
-.benefits-btn {
-  position: relative;
-  font-weight: 500;
-letter-spacing: -0.32px;
-  padding: 18px 36px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.btn-shine {
 border: 1px solid rgba(250, 250, 250, 0.20);
   border-radius: 20px;
-
-  color: #FAFAFA;
-background-color: #242527;
 z-index: 3;
 box-shadow: 2px 2px 4px 0 #363001, -2px 0px 4px 0 #b7b3b3;
-overflow: hidden;
-transition: all .3s;
 }
 
-.benefits-btn__container {
-  position: relative;
-}
-.bg-effect {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-top: 0;
-letter-spacing: 0;
-}
-.benefits-btn::after,
-.benefits-btn::before,
-.bg-effect::before {
+.btn-shine::before {
   content: '';
   position: absolute;
   inset: 0;
-  width: calc(100% + 9px);
+  width: calc(100% + 19px);
   height: calc(100% + 9px);
 transform: translateX(60%);
   background: linear-gradient(45deg, #fff 5%, #ffaa81 30%, #ffda9f 37%, rgba(255, 170, 129, .5) 49%, rgba(210, 106, 58, 0) 92%);
+transform: translateX(60%);
+filter: blur(45px);
+z-index: -1;
+} 
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+left: 70%;
+   width: 20%;
+  height: 70%;
 
-filter: blur(37px);
-z-index: 1;
-
-}
-.benefits-btn::after,
-.benefits-btn::before {
-  filter: blur(7px);
+  filter: blur(1px);
+  transform: translateX(0);
+  border-radius: 60px;
   background: radial-gradient(#fff 5%, #ffaa81 30%, #ffda9f 37%, rgba(255, 170, 129, .5) 49%, rgba(210, 106, 58, 0) 92%);
+  filter: blur(13px);
+  z-index: -1;
+  transform: translateX(60%);
 }
-.benefits-btn::after{
-  width: 80%;
-  height: 80%;
-  transform: translateX(100%);
+.btn-shine:hover .btn-shine::after {
+  top: 0;
+  left: 0;
+     width: 100%;
+    height: 100%;
+  background: radial-gradient(#fff 5%, #ffaa81 30%, #ffda9f 37%, rgba(255, 170, 129, .5) 49%, rgba(210, 106, 58, 0) 92%);
+  filter: blur(20px);
+  transform: translateX(0);
 }
-.benefits-btn:focus,
-.benefits-btn:hover {
- color:#2b64f5;
-  text-shadow: 0px 0px 10px #bb51f4;
-  box-shadow: 0px 0px 0px 0 #363001, 0px 0px 1px 0 #b7b3b3;
-}
+
+
 /* ---cart-gradient--- */
 .gradient-card {
   background: linear-gradient(20deg, transparent 0%, transparent 50%, rgba(0, 65, 232, 0.7) 100%);
