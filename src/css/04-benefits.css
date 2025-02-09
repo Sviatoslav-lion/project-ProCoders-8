@@ -129,6 +129,7 @@ max-height: 675px;
   }
   .benefits-components {
     max-width: 680px;
+    max-height: 675px;
    row-gap: 64px;
   }
   .benefits-list {
@@ -138,7 +139,7 @@ max-height: 675px;
   }
   .benefits-item {
 max-width: 322px;
-max-height: 270px;
+height: 270px;
   }
 }
 /* btn */
