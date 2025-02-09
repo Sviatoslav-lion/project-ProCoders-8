@@ -1,0 +1,132 @@
+.faq-title {
+    margin-bottom: 32px;
+}
+
+.faq-item {
+    border-top: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.faq-item:last-child {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.faq-question-title {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.faq-question-title.active {
+    padding-bottom: 16px;
+}
+
+.faq-open-icon {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 50%;
+    padding: 7px;
+    width: 34px;
+    height: 34px;
+    background-color: inherit;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.active .faq-open-icon {
+    transform: rotate(180deg);
+}
+
+.faq-icon {
+    fill: #fafafa;
+    stroke: none;
+    width: 20px;
+    height: 20px;
+}
+
+.faq-answer {
+    color: rgba(250, 250, 250, 0.6);
+    padding-bottom: 20px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .faq-question-title {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+    }
+
+    .faq-question-title.active {
+        padding-bottom: 26px;
+    }
+
+    .faq-question-span {
+        max-width: 485px;
+    }
+
+    .faq-open-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .faq-answer {
+        max-width: 656px;
+        padding-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .faq-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .faq-item {
+        flex: 1 1 calc(50% - 16px);
+    }
+
+    .faq-answer {
+        padding-bottom: 26px;
+    }
+
+    .faq-item:nth-child(1) {
+        order: 1;
+        border-right: 1px solid rgba(250, 250, 250, 0.2);
+        padding-right: 32px;
+    }
+
+    .faq-item:nth-child(2) {
+        order: 3;
+        border-right: 1px solid rgba(250, 250, 250, 0.2);
+        padding-right: 32px;
+    }
+
+    .faq-item:nth-child(3) {
+        order: 5;
+        border-right: 1px solid rgba(250, 250, 250, 0.2);
+        border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+        padding-right: 32px;
+    }
+
+
+    .faq-item:nth-child(4) {
+        order: 2;
+        padding-left: 32px;
+    }
+
+    .faq-item:nth-child(5) {
+        order: 4;
+        padding-left: 32px;
+    }
+
+    .faq-item:nth-child(6) {
+        order: 6;
+        padding-left: 32px;
+    }
+}

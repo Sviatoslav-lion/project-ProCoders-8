@@ -1,24 +1,29 @@
-<section class="section-base">
-    <div class="container">
-        <h2 class="reviews-header">Reviews</h2>
-        <div class="swiper">
+<section class="section-base reviews-section">
+    <div class="container reviews-container">
+        <h2 class="reviews-title" id="reviews">Reviews</h2>
+    <div class="reviews-swiper">
+        <!-- Additional required wrapper -->
+        <div class="reviews-swiper-wrapper">
+            <!-- Slides -->
             
-            <div class="swiper-wrapper">
-                
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
-            </div>
-            
-            <div class="swiper-pagination"></div>
-        
-            
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        
-            
-            <div class="swiper-scrollbar"></div>
+            ...
         </div>
-    </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="reviews-swiper-pagination"></div>
+    
+        <div class="reviews-sliders-container">
+            <button class="slider-button prev-button-js" aria-label="Previous slide">
+                <svg class="slider-icon" width="25" height="24">
+                    <use href="/images/sprite.svg#arrow_left"></use>
+                </svg>
+            </button>
+            <button class="slider-button next-button-js" aria-label="Next slide">
+                <svg class="slider-icon" width="25" height="24">
+                    <use href="/images/sprite.svg#arrow_right"></use>
+                </svg>
+            </button>
+        </div>
+    
+    
 </section>

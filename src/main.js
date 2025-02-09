@@ -8,7 +8,6 @@ import './js/07-covers.js';
 import './js/08-reviews.js';
 import './js/09-work_together.js';
 import './js/10-menu.js';
-import './js/11-pop-up.js';
 
 // ----- Технічні повідомлення ----------
 
