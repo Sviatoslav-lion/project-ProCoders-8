@@ -14,7 +14,7 @@ ul {
   list-style-type: none;
 }
 .benefits {
-background-color: var(--bg-benefits-section);
+background-color: var(--background);
 }
 .benefits-container {
   max-width: 363px;
