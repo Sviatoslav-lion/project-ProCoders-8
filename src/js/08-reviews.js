@@ -1,15 +1,15 @@
-// Підключення Swiper API (CDN у HTML або через npm)
+
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// Функція для отримання відгуків із backend'у
+
 async function fetchReviews() {
     try {
         const response = await fetch('https://portfolio-js.b.goit.study/api/reviews');
         const data = await response.json();
-        console.log("API Response:", data); // Лог для перевірки відповіді сервера
+        console.log("API Response:", data); 
 
         if (!Array.isArray(data)) {
             console.error("Expected an array but got:", data);
@@ -23,7 +23,7 @@ async function fetchReviews() {
     }
 }
 
-// Функція для рендерингу відгуків і ініціалізації Swiper після завантаження даних
+
 async function renderReviews() {
     const reviewsContainer = document.querySelector('.swiper-wrapper');
     const reviews = await fetchReviews();
@@ -43,11 +43,11 @@ async function renderReviews() {
         </div>
     `).join("");
 
-    // Тепер ініціалізуємо Swiper після вставки контенту
+
     initSwiper();
 }
 
-// Функція для ініціалізації Swiper
+
 function initSwiper() {
     const swiper = new Swiper('.swiper', {
         loop: false,
@@ -76,7 +76,7 @@ function initSwiper() {
     });
 }
 
-// Функція для зміни стану кнопок навігації
+
 function toggleNavButtons(swiper) {
     const prevButton = document.querySelector('.swiper-button-prev');
     const nextButton = document.querySelector('.swiper-button-next');
@@ -94,6 +94,6 @@ function toggleNavButtons(swiper) {
     }
 }
 
-// Запускаємо рендеринг відгуків при завантаженні сторінки
+
 document.addEventListener('DOMContentLoaded', renderReviews);
 
