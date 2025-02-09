@@ -42,7 +42,10 @@
 }
 
 .footer-title-color {
-  color: #0041e8;
+  background: linear-gradient(45deg, #0041e8, #0066ff, #00aaff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .footer-contact-input {
