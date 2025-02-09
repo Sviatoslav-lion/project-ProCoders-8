@@ -1,3 +1,5 @@
+css
+
 /* Основні стилі */
 body {
     font-family: Arial, sans-serif;
@@ -48,7 +50,7 @@ body {
 }
 
 .functional {
-    color:#ED3B44;
+    color: #ED3B44;
     font-weight: bold;
 }
 
@@ -78,15 +80,17 @@ body {
     margin-top: 20px;
     list-style: none;
     padding: 0;
-    margin-left:32px;
+    margin-left: 32px;
 }
 
 .accordion-item {
     background: #1e1e1e;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    /* border-radius: 8px; */
+    /* margin-bottom: 20px; */
     overflow: hidden;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
+
 
 .accordion-header {
     font-family: 'Inter Tight', sans-serif;
@@ -95,7 +99,7 @@ body {
     line-height: 24px;
     letter-spacing: -2%;
     color: #FAFAFA66;
-    padding: 15px;
+    padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -104,9 +108,10 @@ body {
 }
 
 .accordion-content {
-    padding: 16px;
+    /* padding: 16px; */
+    padding-bottom: 20px;
     display: none;
-    margin-top: 12px;
+    /* margin-top: 12px; */
     gap: 32px;
     font-weight: 500;
     size: 16px;
@@ -156,18 +161,18 @@ body {
         padding: 40px;
     }
 
- .image-box {
-     margin-top: 16px;
-     border-radius: 10px;
-     width: 704px;
-     border-radius: 24px;
- }
+    .image-box {
+        margin-top: 16px;
+        border-radius: 10px;
+        width: 704px;
+        border-radius: 24px;
+    }
 
- .image-box img {
-     width: 100%;
-     height: auto;
-     border-radius: 24px;
- }
+    .image-box img {
+        width: 100%;
+        height: auto;
+        border-radius: 24px;
+    }
 
     .accordion {
         width: 704px;
@@ -177,11 +182,13 @@ body {
 
     .accordion-header {
         font-size: 14px;
-        padding: 12px;
+        /* padding: 12px; */
+        padding-top: 32px;
     }
 
     .accordion-content {
-        padding: 12px;
+        /* padding: 12px; */
+        padding-bottom: 32px;
 
     }
 
@@ -190,71 +197,71 @@ body {
 
 
 
-@media screen and (min-width: 1440px){
-        .container {
-                width: 1440px;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-            }
-        
-            .text-box {
-                width: 680px;
-                height: 700px;
-                border-radius: 24px;
-                margin-top: 20px;
-                padding-top: 44px;
-                padding-left: 44px;
-            }
-        
-            .text-box p {
-                font-size: 38px;
-                line-height: 40px;
-                font-weight: 500;
-                padding: 0px;
-                letter-spacing: -3%;
-                font: inter tight;
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-              
+    .text-box {
+        width: 680px;
+        height: 700px;
+        border-radius: 24px;
+        margin-top: 20px;
+        padding-top: 44px;
+        padding-left: 44px;
+    }
 
-            }
-        
-            .image-box {
-                width: 680px;
-                    height: 700px;
-            }
-        
-            .image-box img {
-                width: 680px;
-                height: 700px;
-                border-radius: 24px;
-            }
-        
-            .accordion {
-            width: 1376px;
-            
-            
-        
-            }
-        
-            .accordion-header {
-                font-size: 14px;
-                padding: 12px;
-                
-            }
-        
-            .accordion-content {
-              width: 50%;
-              width: 612px;
-              
-            
-        
-            }
+    .text-box p {
+        font-size: 38px;
+        line-height: 40px;
+        font-weight: 500;
+        padding: 0px;
+        letter-spacing: -3%;
+        font: inter tight;
 
-            .about-me-text {
-               
-                width: 50%;
-            }
+
+
+    }
+
+    .image-box {
+        width: 680px;
+        height: 700px;
+    }
+
+    .image-box img {
+        width: 680px;
+        height: 700px;
+        border-radius: 24px;
+    }
+
+    .accordion {
+        width: 1376px;
+
+
+
+    }
+
+    .accordion-header {
+        font-size: 14px;
+        /* padding: 12px; */
+
+    }
+
+    .accordion-content {
+        width: 50%;
+        width: 612px;
+
+
+
+    }
+
+    .about-me-text {
+
+        width: 50%;
+    }
 
 
 }
@@ -355,14 +362,6 @@ body {
     height: 100%;
     fill: #3B3B3B;
 }
-
-
-
-
-
-
-
-
 
 
 
