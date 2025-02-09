@@ -19,10 +19,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 343px;
+    /* width: 343px;
     margin-top: 64px;
     margin-left: 32px;
-    margin-right: 32px;
+    margin-right: 32px; */
+   
 }
 
 /* Текстовий блок */
@@ -57,20 +58,106 @@ body {
 }
 
 /* Зображення */
-.image-box {
+/* .image-box {
     margin-top: 16px;
     border-radius: 10px;
     overflow: hidden;
-    width: 100%;
+ 
+    aspect-ratio: 343 / 500;
     border-radius: 24px;
 }
 
 .image-box img {
-    width: 343px;
-    height: 500px;
+    max-width: 343px;
+    max-height: 500px;
     border-radius: 10px;
+} */
+.avatar-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
 }
 
+.text-box {
+  padding: 32px;
+  width: 100%;
+  max-width: 343px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.avatar-photo {
+  width: 100%;
+  max-width: 343px;
+height: 500px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.avatar-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 24px;
+  height: 500px;
+  width: 343px;
+}
+
+@media screen and (min-width: 375px) {
+  .text-box,
+  .avatar-photo {
+    min-width: 343px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .text-box,
+  .avatar-photo {
+    width: 100%;
+    height: 100%;
+    max-width: 704px;
+    max-height: 700px;
+    /* aspect-ratio: 704 / 700; */
+  }
+  .text-box {
+    padding: 64px;
+  }
+  .text-box,
+  .avatar-photo img {
+    width: 100%;
+    height: 100%;
+    height: 700px;
+    width: 704px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .avatar-conteiner {
+display: flex;
+flex-direction: row;
+align-items: stretch;
+gap: 16px;
+  }
+  .text-box,
+  .avatar-photo {
+   width: 100%;
+   height: 100%;
+   max-width: 680px;
+    max-width: 700px;
+  }
+  .text-box {
+    padding: 64px;
+  }
+  .text-box,
+  .avatar-photo img {
+    width: 100%;
+    height: 100%;
+    height: 700px;
+    width: 680px;
+  }
+}
 
 /* ===== АККОРДЕОН ===== */
 .accordion {
@@ -144,11 +231,11 @@ body {
         width: 704px;
     }
 
-    .text-box {
+    /* .text-box {
         width: 704px;
         height: 700px;
         padding: 15px;
-    }
+    } */
 
     .text-box p {
         font-size: 38px;
@@ -197,15 +284,15 @@ body {
                 align-items: center;
                 justify-content: space-between;
             }
-        
+/*         
             .text-box {
                 width: 680px;
                 height: 700px;
                 border-radius: 24px;
-                margin-top: 20px;
+          
                 padding-top: 44px;
                 padding-left: 44px;
-            }
+            } */
         
             .text-box p {
                 font-size: 38px;
