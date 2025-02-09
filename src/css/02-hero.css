@@ -5,7 +5,7 @@
 }
 .hero.hero-grad {
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
   padding: 32px 0;
   width: 100vw;
   background: linear-gradient(-90deg, #1c1d20 50%, #001958 68%, #0041e8 100%);
@@ -53,6 +53,12 @@
 .hero-list-link {
   font-weight: 500;
   font-size: 14px;
+}
+.hero-list-item:hover,
+.hero-list-item:focus,
+.hero-list-mail:hover,
+.hero-list-mail:focus {
+  border: 1px solid #fafafa;
 }
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .hero::before {
