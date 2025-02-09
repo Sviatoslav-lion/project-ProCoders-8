@@ -21,10 +21,10 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/img/Glass\ effect\ 1.webp');
+  background-image: url('/images/menu/1.webp');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; 
   background-repeat: no-repeat;
   z-index: -1;
   backdrop-filter: blur(4px);
