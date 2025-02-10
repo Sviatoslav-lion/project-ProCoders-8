@@ -66,7 +66,7 @@ function initSwiper() {
 
   const swiper = new Swiper(".reviews-swiper", {
     slidesPerView: 1, // Мобільний
-    spaceBetween: 20,
+    spaceBetween: 0,
     loop: false,
     speed: 800,
     navigation: {
@@ -102,9 +102,7 @@ function initSwiper() {
       },
     },
   });
-  //   Чому ми викликаємо swiper.update(); і updateNavigationButtons(swiper); разом?
-  // Коли ми динамічно додаємо слайди, Swiper не знає, що вони зявилися.
-  // Тому потрібно оновити Swiper і одразу оновити кнопки навігації.
+
   setTimeout(() => {
     swiper.update();
     updateNavigationButtons(swiper);
@@ -129,18 +127,38 @@ function updateNavigationButtons(swiper) {
     console.error("Navigation buttons not found!");
     return;
   }
+   swiper.on('slideChange', () => {
+    prevButton.disabled = swiper.isBeginning;
+    nextButton.disabled = swiper.isEnd;
+
+    prevButton.classList.toggle("disabled", swiper.isBeginning);
+    nextButton.classList.toggle("disabled", swiper.isEnd);
+  });
+
+  // Додаємо додаткові події для ще кращого контролю
+  swiper.on('reachBeginning', () => {
+    prevButton.disabled = true;
+    prevButton.classList.add("disabled");
+  });
+
+  swiper.on('reachEnd', () => {
+    nextButton.disabled = true;
+    nextButton.classList.add("disabled");
+  });
+
+  swiper.on('fromEdge', () => {
+    prevButton.disabled = false;
+    nextButton.disabled = false;
+    prevButton.classList.remove("disabled");
+    nextButton.classList.remove("disabled");
+  });
+
+  // Запускаємо оновлення кнопок одразу після ініціалізації
   setTimeout(() => {
     prevButton.disabled = swiper.isBeginning;
     nextButton.disabled = swiper.isEnd;
 
     prevButton.classList.toggle("disabled", swiper.isBeginning);
     nextButton.classList.toggle("disabled", swiper.isEnd);
-  }, 100); 
-}
-function disableButton(selector) {
-  const button = document.querySelector(selector);
-  if (button) {
-    button.disabled = true;
-    button.classList.add("disabled");
-  }
+  }, 100);
 }
