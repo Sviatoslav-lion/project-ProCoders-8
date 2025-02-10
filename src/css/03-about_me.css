@@ -1,21 +1,5 @@
 /* Основні стилі */
 
-/* Закомічено для отладки
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: #FAFAFA;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
-    text-align: left;
-    /* Тепер весь текст вирівнюється по лівому краю 
-} */
-
 /* Контейнер */
 .container {
     display: flex;
@@ -40,9 +24,19 @@ body {
 }
 
 .text-box p {
+
     font-size: 18px;
     line-height: 1.5;
     border-radius: 32px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--main-text);
+
+
 }
 
 .highlight {
@@ -52,119 +46,99 @@ body {
 
 .functional {
     color:#ED3B44;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .gray {
     color: #FAFAFA66;
 }
 
-/* Зображення */
-/* .image-box {
-    margin-top: 16px;
-    border-radius: 10px;
-    overflow: hidden;
- 
-    aspect-ratio: 343 / 500;
-    border-radius: 24px;
-}
-
-.image-box img {
-    max-width: 343px;
-    max-height: 500px;
-    border-radius: 10px;
-} */
 .avatar-conteiner {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 16px;
-}
-
-.text-box {
-  padding: 32px;
-  width: 100%;
-  max-width: 343px;
-  border-radius: 24px;
-  overflow: hidden;
-}
-
-.avatar-photo {
-  width: 100%;
-  max-width: 343px;
-height: 500px;
-  border-radius: 24px;
-  overflow: hidden;
-}
-
-.avatar-photo img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 24px;
-  height: 500px;
-  width: 343px;
-}
-
-@media screen and (min-width: 375px) {
-  .text-box,
-  .avatar-photo {
-    min-width: 343px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 0 16px;
+    max-width: 375px;
   }
-
-}
+  .text-box {
+    padding: 32px;
+    width: 100%;
+    max-width: 343px;
+    border-radius: 24px;
+    overflow: hidden;
+    flex-shrink: 1;
+  }
+  .avatar-photo {
+    width: 100%;
+    height: auto;
+    max-width: 343px;
+  max-height: 500px;
+    border-radius: 24px;
+    overflow: hidden;  flex-shrink: 1;
+    flex-grow: 1;
+  }
+  .avatar-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 24px;
+    height: 500px;
+    width: 343px;
+  }
+@media screen and (min-width: 375px) {
+    .text-box,
+    .avatar-photo {
+      min-width: 343px;
+    }}
 
 @media screen and (min-width: 768px) {
-  .text-box,
-  .avatar-photo {
-    width: 100%;
-    height: 100%;
-    max-width: 704px;
-    max-height: 700px;
-    /* aspect-ratio: 704 / 700; */
+    .avatar-conteiner {
+      max-width: 768px;
+      align-items: center;
+      padding: 0 32px;  }
+    .text-box,
+    .avatar-photo {
+      min-width: 704px;
+      max-height: 700px;
+      flex-grow: 0;
+      width: 100%;
+    }
+    .text-box {
+      padding: 64px;
+    }
+    .text-box,
+    .avatar-photo img {
+      height: 700px;
+      width: 704px;
+    }
+    .text-box p {
+        font-family: var(--font-family);
+font-weight: 500;
+font-size: 38px;
+line-height: 105%;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: var(--main-text);
+    }
   }
-  .text-box {
-    padding: 64px;
-  }
-  .text-box,
-  .avatar-photo img {
-    width: 100%;
-    height: 100%;
-    height: 700px;
-    width: 704px;
-  }
-}
-
 @media screen and (min-width: 1440px) {
-.section-about-me {
-    padding-top: 96px;
-}
-
-  .avatar-conteiner {
-display: flex;
-flex-direction: row;
-align-items: stretch;
-gap: 16px;
+    .avatar-conteiner {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+    }
+    .text-box,
+    .avatar-photo,
+    .avatar-photo img {
+      min-width: 680px;
+    }
+    .avatar-conteiner .text-box {
+      padding: 64px;
+  width: 680px;
+    }
   }
-  .text-box,
-  .avatar-photo {
-   width: 100%;
-   height: 100%;
-   max-width: 680px;
-    max-width: 700px;
-  }
-  .text-box {
-    padding: 64px;
-  }
-  .text-box,
-  .avatar-photo img {
-    width: 100%;
-    height: 100%;
-    height: 700px;
-    width: 680px;
-  }
-}
-
+  
 
 
 /* ===== АККОРДЕОН ===== */
@@ -234,17 +208,17 @@ gap: 16px;
 
 
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .container {
         width: 704px;
-    }
+    } */
 
     /* .text-box {
         width: 704px;
         height: 700px;
         padding: 15px;
     } */
-
+/* 
     .text-box p {
         font-size: 38px;
         line-height: 40px;
@@ -280,18 +254,19 @@ gap: 16px;
 
     }
 
-}
+} */
 
 
 
 
-@media screen and (min-width: 1440px){
+/* @media screen and (min-width: 1440px){
         .container {
                 width: 1440px;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
             }
+             */
 /*         
             .text-box {
                 width: 680px;
@@ -301,7 +276,9 @@ gap: 16px;
                 padding-top: 44px;
                 padding-left: 44px;
             } */
-        
+
+            /* -------- */
+/*         
             .text-box p {
                 font-size: 38px;
                 line-height: 40px;
@@ -353,7 +330,7 @@ gap: 16px;
 
 
 }
-
+ */
 
 
 
