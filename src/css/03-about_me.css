@@ -46,7 +46,8 @@
     gap: 16px;
     padding: 0 16px;
     max-width: 375px;
-  }
+}
+
   .text-box {
     padding: 32px;
     width: 100%;
@@ -54,7 +55,8 @@
     border-radius: 24px;
     overflow: hidden;
     flex-shrink: 1;
-  }
+}
+
   .avatar-photo {
     width: 100%;
     height: auto;
@@ -63,7 +65,8 @@
     border-radius: 24px;
     overflow: hidden;  flex-shrink: 1;
     flex-grow: 1;
-  }
+}
+
   .avatar-photo img {
     width: 100%;
     height: auto;
@@ -71,18 +74,22 @@
     border-radius: 24px;
     height: 500px;
     width: 343px;
-  }
+}
+
 @media screen and (min-width: 375px) {
-    .text-box,
-    .avatar-photo {
+.text-box,
+.avatar-photo {
       min-width: 343px;
-    }}
+    }
+}
 
 @media screen and (min-width: 768px) {
-    .avatar-conteiner {
+.avatar-conteiner {
       max-width: 768px;
       align-items: center;
-      padding: 0 32px;  }
+      padding: 0 32px;  
+}
+
     .text-box,
     .avatar-photo {
       min-width: 704px;
@@ -90,14 +97,17 @@
       flex-grow: 0;
       width: 100%;
     }
+
     .text-box {
       padding: 64px;
     }
+
     .text-box,
     .avatar-photo img {
       height: 700px;
       width: 704px;
     }
+
     .text-box p {
         font-family: var(--font-family);
 font-weight: 500;
@@ -107,27 +117,31 @@ letter-spacing: -0.03em;
 text-transform: uppercase;
 color: var(--main-text);
     }
-  }
-@media screen and (min-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1440px){
     .avatar-conteiner {
   max-width: 1440px;
   display: flex;
   flex-direction: row;
     }
+
     .text-box,
     .avatar-photo,
     .avatar-photo img {
       min-width: 680px;
     }
+
     .avatar-conteiner .text-box {
       padding: 64px;
   width: 680px;
     }
-  }
+ }
 
 
 /* ===== АККОРДЕОН ===== */
-/* .accordion {
+.accordion {
     width: 343px;
     margin-top: 20px;
     list-style: none;
@@ -191,7 +205,7 @@ color: var(--main-text);
 
 .arrow {
     font-size: 16px;
-} */
+} 
 
 
 @media screen and (min-width: 768px) {
