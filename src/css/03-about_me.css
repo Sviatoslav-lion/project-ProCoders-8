@@ -251,6 +251,14 @@ color: var(--main-text);
     height: 40px;
 }
 
+.accordion-item.open .accordion-content {
+    display: block ;
+}
+.accordion-item.open .abme {
+    transform: rotate(180deg);
+}
+
+
 @media screen and (min-width: 768px) {
     .accordion-about-me {
         width: 704px;

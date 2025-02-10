@@ -2,13 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const aboutItems = document.querySelectorAll(".accordion-item");
 
 
-    aboutItems.forEach((item) => {
+    aboutItems.forEach((item, index) => {
         const aboutmeHeader = item.querySelector(".accordion-header");
         const aboutmeIcon = item.querySelector(".abme");
         const aboutmeContent = item.querySelector(".accordion-content");
         
-        aboutmeContent.style.display = "none";
-        aboutmeIcon.style.transform = "rotate(0deg)";
+        if (index === 0) {
+            // Перший елемент залишаємо відкритим
+            aboutmeContent.style.display = "block";
+            aboutmeIcon.style.transform = "rotate(180deg)";
+            aboutmeHeader.classList.add("active");
+        } else {
+            // Інші приховуємо
+            aboutmeContent.style.display = "none";
+            aboutmeIcon.style.transform = "rotate(0deg)";
+        }
 
         aboutmeHeader.addEventListener("click", function () {
             //item.classList.toggle("open");                      // відкриваємо прихований вміст елементу
