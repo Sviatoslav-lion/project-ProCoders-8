@@ -128,7 +128,7 @@ color: var(--main-text);
 
 
 /* ===== АККОРДЕОН ===== */
-.accordion {
+/* .accordion {
     width: 343px;
     margin-top: 20px;
     list-style: none;
@@ -190,7 +190,7 @@ color: var(--main-text);
 
 .arrow {
     font-size: 16px;
-}
+} */
 
 
 
@@ -331,7 +331,7 @@ color: var(--main-text);
 
 /* ===== СЛАЙДЕР ===== */
 /* Контейнер слайдера */
-
+/* 
 .skills-container {
     width: 100%;
     max-width: 343px;
@@ -341,7 +341,7 @@ color: var(--main-text);
     align-items: center;
     justify-content: center;
     /* Центруємо контейнер */
-}
+} */
 
 /* Основний слайдер */
 /*
