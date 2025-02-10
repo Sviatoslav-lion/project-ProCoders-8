@@ -1,0 +1,390 @@
+/* Текстовий блок */
+.text-box {
+    background-color: #242527;
+    width: 343px;
+    height: 436px;
+    border-radius: 16px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.text-box p {
+
+    font-size: 18px;
+    line-height: 1.5;
+    border-radius: 32px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--main-text);
+
+
+}
+
+.highlight {
+    color: #FAFAFA;
+    font-weight: bold;
+}
+
+.functional {
+    color:#ED3B44;
+    /* font-weight: bold; */
+}
+
+.gray {
+    color: #FAFAFA66;
+}
+
+.avatar-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 0 16px;
+    max-width: 375px;
+}
+
+  .text-box {
+    padding: 32px;
+    width: 100%;
+    max-width: 343px;
+    border-radius: 24px;
+    overflow: hidden;
+    flex-shrink: 1;
+}
+
+  .avatar-photo {
+    width: 100%;
+    height: auto;
+    max-width: 343px;
+  max-height: 500px;
+    border-radius: 24px;
+    overflow: hidden;  flex-shrink: 1;
+    flex-grow: 1;
+}
+
+  .avatar-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 24px;
+    height: 500px;
+    width: 343px;
+}
+
+@media screen and (min-width: 375px) {
+.text-box,
+.avatar-photo {
+      min-width: 343px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+.avatar-conteiner {
+      max-width: 768px;
+      align-items: center;
+      padding: 0 32px;  
+}
+
+    .text-box,
+    .avatar-photo {
+      min-width: 704px;
+      max-height: 700px;
+      flex-grow: 0;
+      width: 100%;
+    }
+
+    .text-box {
+      padding: 64px;
+    }
+
+    .text-box,
+    .avatar-photo img {
+      height: 700px;
+      width: 704px;
+    }
+
+    .text-box p {
+        font-family: var(--font-family);
+font-weight: 500;
+font-size: 38px;
+line-height: 105%;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: var(--main-text);
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .avatar-conteiner {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+    }
+
+    .text-box,
+    .avatar-photo,
+    .avatar-photo img {
+      min-width: 680px;
+    }
+
+    .avatar-conteiner .text-box {
+      padding: 64px;
+  width: 680px;
+    }
+ }
+
+
+/* ===== АККОРДЕОН ===== */
+.accordion {
+    width: 343px;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    margin-left: 32px;
+}
+
+.accordion-item {
+    background: #1e1e1e;
+    /* border-radius: 8px; */
+    /* margin-bottom: 20px; */
+    overflow: hidden;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.accordion-header {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -2%;
+    color: #FAFAFA66;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+    gap: 23px;
+}
+
+.accordion-content {
+    /* padding: 16px; */
+    padding-bottom: 20px;
+    display: none;
+    /* margin-top: 12px; */
+    gap: 32px;
+    font-weight: 500;
+    size: 16px;
+    line-height: 24px;
+    letter-spacing: -2%;
+    font: inter tight;
+
+}
+
+.about-me-text {
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.role-text {
+    margin-bottom: 10px;
+}
+
+.education-text {
+    margin-top: 10px;
+}
+
+.accordion-item.open .accordion-content {
+    display: block;
+}
+
+.arrow {
+    font-size: 16px;
+} 
+
+
+@media screen and (min-width: 768px) {
+    .accordion {
+        width: 704px;
+        margin-top: 64px;
+    }
+
+    .accordion-header {
+        font-size: 14px;
+        /* padding: 12px; */
+        padding-top: 32px;
+    }
+
+    .accordion-content {
+        /* padding: 12px; */
+        padding-bottom: 32px;
+
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .accordion {
+        width: 1376px;
+    }
+
+    .accordion-header {
+        font-size: 14px;
+        /* padding: 12px; */
+    }
+
+    .accordion-content {
+        width: 50%;
+        width: 612px;
+    }
+
+
+    .about-me-text {
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== СЛАЙДЕР ===== */
+/* Контейнер слайдера */
+/* 
+.skills-container {
+    width: 100%;
+    max-width: 343px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Центруємо контейнер */
+/* } */ 
+
+/* Основний слайдер */
+/*
+.swiper {
+    flex-grow: 1;
+    padding: 20px 0;
+}
+*/
+
+/* Окремий елемент у слайдері */
+/*
+.swiper-slide {
+    display: flex;
+    justify-content: flex-start;*/
+    /* Вирівнюємо елементи по лівому краю */
+    /*
+    align-items: center;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: left;*/
+    /* Текст буде по лівому краю всередині кола */
+    /*
+    padding-left: 10px;
+    */
+    /* Додаємо відступ зліва для тексту */
+    /*
+}
+*/
+/* Всередині кожного круга */
+/*
+.swiper-slide span {
+    display: block;
+    width: 100%;*/
+    /* Розтягуємо текст на всю ширину слайду *//*
+}
+*/
+
+/* Контейнер для стрілки */
+/* .swiper-button-next {
+    position: static;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background: #444;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.skills-container {
+    position: relative; */
+    /* Забезпечуємо, щоб кнопка була в межах контейнера
+}
+
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-button-next svg {
+    width: 100%;
+    height: 100%;
+    fill: #3B3B3B;
+}
+
+
+
+
+ */
+
+
+
+
+
+
+/* 
+
+.icon {
+    display: none; */
+    /* Ховаємо всі іконки за замовчуванням */
+/* }
+
+.icon.closed {
+    display: inline-block; */
+    /* Показуємо іконку "закрити" */
+/* }
+
+.accordion-item.open .icon.closed {
+    display: none; */
+    /* Ховаємо "закрити", якщо елемент відкритий */
+/* }
+
+.accordion-item.open .icon.open {
+    display: inline-block; */
+    /* Показуємо іконку "відкрити" */
+/* } */
