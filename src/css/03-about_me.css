@@ -331,6 +331,7 @@ color: var(--main-text);
 
 /* ===== СЛАЙДЕР ===== */
 /* Контейнер слайдера */
+
 .skills-container {
     width: 100%;
     max-width: 343px;
@@ -343,16 +344,20 @@ color: var(--main-text);
 }
 
 /* Основний слайдер */
+/*
 .swiper {
     flex-grow: 1;
     padding: 20px 0;
 }
+*/
 
 /* Окремий елемент у слайдері */
+/*
 .swiper-slide {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start;*/
     /* Вирівнюємо елементи по лівому краю */
+    /*
     align-items: center;
     background-color: #222;
     color: white;
@@ -361,21 +366,26 @@ color: var(--main-text);
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    text-align: left;
+    text-align: left;*/
     /* Текст буде по лівому краю всередині кола */
+    /*
     padding-left: 10px;
+    */
     /* Додаємо відступ зліва для тексту */
+    /*
 }
-
+*/
 /* Всередині кожного круга */
+/*
 .swiper-slide span {
     display: block;
-    width: 100%;
-    /* Розтягуємо текст на всю ширину слайду */
+    width: 100%;*/
+    /* Розтягуємо текст на всю ширину слайду *//*
 }
+*/
 
 /* Контейнер для стрілки */
-.swiper-button-next {
+/* .swiper-button-next {
     position: static;
     margin-left: 10px;
     width: 40px;
@@ -391,8 +401,8 @@ color: var(--main-text);
 }
 
 .skills-container {
-    position: relative;
-    /* Забезпечуємо, щоб кнопка була в межах контейнера */
+    position: relative; */
+    /* Забезпечуємо, щоб кнопка була в межах контейнера
 }
 
 .swiper-button-next {
@@ -417,30 +427,30 @@ color: var(--main-text);
 
 
 
+ */
 
 
 
 
 
 
-
-
+/* 
 .icon {
-    display: none;
+    display: none; */
     /* Ховаємо всі іконки за замовчуванням */
-}
+/* }
 
 .icon.closed {
-    display: inline-block;
+    display: inline-block; */
     /* Показуємо іконку "закрити" */
-}
+/* }
 
 .accordion-item.open .icon.closed {
-    display: none;
+    display: none; */
     /* Ховаємо "закрити", якщо елемент відкритий */
-}
+/* }
 
 .accordion-item.open .icon.open {
-    display: inline-block;
+    display: inline-block; */
     /* Показуємо іконку "відкрити" */
-}
+/* } */
