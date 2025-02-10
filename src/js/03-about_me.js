@@ -45,28 +45,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
-    const swiper = new Swiper(".swiper", {
-        slidesPerView: 2, // 2 кола на екрані
-        spaceBetween: 10,
+    const buttonEl = document.querySelector(".swiper-button-next");
+    const swiperEl = document.querySelector(".about-me-swiper-container");
+
+    const swiperAbout = new Swiper(".about-me-skills", {
+        speed: 800,
         loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-        },
+        slidesPerView: 2,
+        slideActiveClass: "swiper-content-wrap-active",
         keyboard: {
             enabled: true,
+            onlyInViewport: true,
         },
-        mousewheel: true,
-
-
+        mousewheel: {
+            invert: true,
+        },
         breakpoints: {
-            768: { 
-                slidesPerView: 3,
-            },
-            1440: { 
-                slidesPerView: 6,
-            }
+            375: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1440: { slidesPerView: 6 },
+        },
+        slideToClickedSlide: true,
+    });
+
+    // Перехід на наступний слайд при натисканні на кнопку
+    buttonEl.addEventListener("click", () => {
+        swiperAbout.slideNext();
+    });
+
+    // Керування слайдером за допомогою клавіатури
+    swiperEl.addEventListener("keydown", function (event) {
+        event.preventDefault();
+        if (event.key === "ArrowRight") {
+            swiperAbout.slideNext();
+        } else if (event.key === "ArrowLeft") {
+            swiperAbout.slidePrev();
         }
     });
 });
