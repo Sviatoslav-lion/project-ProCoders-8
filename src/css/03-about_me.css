@@ -1,31 +1,4 @@
-css
 
-/* Основні стилі */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: #FAFAFA;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
-    text-align: left;
-    /* Тепер весь текст вирівнюється по лівому краю */
-}
-
-/* Контейнер */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 343px;
-    margin-top: 64px;
-    margin-left: 32px;
-    margin-right: 32px;
-}
 
 /* Текстовий блок */
 .text-box {
