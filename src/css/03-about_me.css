@@ -124,7 +124,6 @@ color: var(--main-text);
   width: 680px;
     }
   }
-  
 
 
 /* ===== АККОРДЕОН ===== */
@@ -133,14 +132,15 @@ color: var(--main-text);
     margin-top: 20px;
     list-style: none;
     padding: 0;
-    margin-left:32px;
+    margin-left: 32px;
 }
 
 .accordion-item {
     background: #1e1e1e;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    /* border-radius: 8px; */
+    /* margin-bottom: 20px; */
     overflow: hidden;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 .accordion-header {
@@ -150,7 +150,7 @@ color: var(--main-text);
     line-height: 24px;
     letter-spacing: -2%;
     color: #FAFAFA66;
-    padding: 15px;
+    padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -159,9 +159,10 @@ color: var(--main-text);
 }
 
 .accordion-content {
-    padding: 16px;
+    /* padding: 16px; */
+    padding-bottom: 20px;
     display: none;
-    margin-top: 12px;
+    /* margin-top: 12px; */
     gap: 32px;
     font-weight: 500;
     size: 16px;
@@ -193,130 +194,48 @@ color: var(--main-text);
 } */
 
 
-
-/* @media screen and (min-width: 768px) {
-    .container {
-        width: 704px;
-    } */
-
-    /* .text-box {
-        width: 704px;
-        height: 700px;
-        padding: 15px;
-    } */
-/* 
-    .text-box p {
-        font-size: 38px;
-        line-height: 40px;
-        padding: 40px;
-    }
-
- .image-box {
-     margin-top: 16px;
-     border-radius: 10px;
-     width: 704px;
-     border-radius: 24px;
- }
-
- .image-box img {
-     width: 100%;
-     height: auto;
-     border-radius: 24px;
- }
-
+@media screen and (min-width: 768px) {
     .accordion {
         width: 704px;
         margin-top: 64px;
-
     }
 
     .accordion-header {
         font-size: 14px;
-        padding: 12px;
+        /* padding: 12px; */
+        padding-top: 32px;
     }
 
     .accordion-content {
-        padding: 12px;
+        /* padding: 12px; */
+        padding-bottom: 32px;
 
     }
-
-} */
-
-
-
-
-/* @media screen and (min-width: 1440px){
-        .container {
-                width: 1440px;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-            }
-             */
-/*         
-            .text-box {
-                width: 680px;
-                height: 700px;
-                border-radius: 24px;
-          
-                padding-top: 44px;
-                padding-left: 44px;
-            } */
-
-            /* -------- */
-/*         
-            .text-box p {
-                font-size: 38px;
-                line-height: 40px;
-                font-weight: 500;
-                padding: 0px;
-                letter-spacing: -3%;
-                font: inter tight;
-
-              
-
-            }
-        
-            .image-box {
-                width: 680px;
-                    height: 700px;
-            }
-        
-            .image-box img {
-                width: 680px;
-                height: 700px;
-                border-radius: 24px;
-            }
-        
-            .accordion {
-            width: 1376px;
-            
-            
-        
-            }
-        
-            .accordion-header {
-                font-size: 14px;
-                padding: 12px;
-                
-            }
-        
-            .accordion-content {
-              width: 50%;
-              width: 612px;
-              
-            
-        
-            }
-
-            .about-me-text {
-               
-                width: 50%;
-            }
-
-
 }
- */
+
+
+@media screen and (min-width: 1440px) {
+    .accordion {
+        width: 1376px;
+    }
+
+    .accordion-header {
+        font-size: 14px;
+        /* padding: 12px; */
+    }
+
+    .accordion-content {
+        width: 50%;
+        width: 612px;
+    }
+
+
+    .about-me-text {
+        width: 50%;
+    }
+}
+
+
 
 
 
@@ -435,6 +354,7 @@ color: var(--main-text);
 
 
 /* 
+
 .icon {
     display: none; */
     /* Ховаємо всі іконки за замовчуванням */
