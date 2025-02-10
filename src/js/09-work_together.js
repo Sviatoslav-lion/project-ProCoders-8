@@ -1,6 +1,6 @@
-import axios from 'axios';
-import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
+// import axios from 'axios'; // підключено в index.html
+// import iziToast from 'izitoast'; // підключено в index.html
+// import 'izitoast/dist/css/iziToast.min.css'; // підключено в index.html
 
 document.addEventListener('DOMContentLoaded', function () {
  
