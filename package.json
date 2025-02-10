@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/project-ProCoders-8/",
-    "preview": "vite preview",
-    "accent": "application/json"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "glob": "^11.0.0",
