@@ -171,8 +171,9 @@ max-width: 322px;
 }
 .btn-benefit:focus,
 .btn-benefit:hover {
-  border: 1px solid var(--bg-svg-benefits-item);
-  color: var(--bg-svg-benefits-item);
+  /* border: 1px solid var(--bg-svg-benefits-item);
+  color: var(--bg-svg-benefits-item); */
+  border-color: #fafafa;
   
 }
 
