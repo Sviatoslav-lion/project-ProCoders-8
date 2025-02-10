@@ -13,11 +13,9 @@ ul {
   padding: 0;
   list-style-type: none;
 }
-
 .benefits {
 background-color: var(--background);
 }
-
 .benefits-container {
   max-width: 363px;
   height: auto;
@@ -28,19 +26,15 @@ background-color: var(--background);
   flex-direction: column;
   align-items: flex-start;
 
-
 }
 .benefits-title {
-
   display: inline;
   font-weight: 600;
   line-height: 1.5; /* 150% */
   letter-spacing: -0.32px;
   text-transform: uppercase;
   color: var(--col-benefits-title);
-
   margin-block-end: 32px;
-
 }
 .benefits-components {
   display: flex;
@@ -50,21 +44,15 @@ background-color: var(--background);
 }
 .benefits-list {
   display: grid;
-
   grid-template-columns: repeat(1fr, minmax(200px, 344px));
   grid-template-rows: 270px;
-
   gap: 16px;
 }
 
 .benefits-item {
   max-width: 344px;
-
   padding: 24px;
-
 border-radius: 20px;
-
-
 background-color:var(--bg-benefits-item);
 }
 .benefits-icon-container {
@@ -102,12 +90,10 @@ margin: 0;
 margin-bottom: 8px;
 }
 
-.benefits-item-text p {
+.benefits-item-text  {
   font-weight: 500;
-
   line-height: 1.5; /* 150% */
-  letter-spacing: -0.02em;
-
+  letter-spacing: -0.03em;
   color: var(--col-benefits-item-text);
   margin: 0;
 }
@@ -119,43 +105,43 @@ margin-bottom: 8px;
   .benefits-container{
     max-width: 704px;
     max-height: 797px;
-
-
   }
-
+  .benefits-components {
+    gap: 64px;
+  }
   .benefits-list {
     grid-template-columns: 344px 344px;
-
 
     gap: 16px;
   }
 }
 @media screen and (min-width: 1440px) {
+  .benefits{
+    /* height: fit-content; */
+  }
   .benefits-container {
     max-width: 1376px;
 max-height: 675px;
    
-
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
   }
   .benefits-components {
     max-width: 680px;
-    gap: 64px;
+    max-height: 675px;
+   row-gap: 64px;
   }
   .benefits-list {
     grid-template-columns: 332px 332px;
-
     grid-template-rows: 270px;
-
     gap: 16px;
   }
   .benefits-item {
 max-width: 322px;
+height: 270px;
   }
 }
-
 /* btn */
 .btn-benefit {
   position: relative;
@@ -174,7 +160,6 @@ max-width: 322px;
   /* border: 1px solid var(--bg-svg-benefits-item);
   color: var(--bg-svg-benefits-item); */
   border-color: #fafafa;
-  
 }
 
 
@@ -242,4 +227,3 @@ left: 70%;
 .shadow-3d {
   box-shadow: -2px -2px 3px 0#f2f0f0, 2px 3px 4px 0#0d0430;
 }
-
