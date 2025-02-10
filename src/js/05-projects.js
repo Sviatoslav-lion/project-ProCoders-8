@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const prevButton = document.querySelector('.prev-button-js');
-  const nextButton = document.querySelector('.next-button-js');
-  const swiperContainer = document.querySelector('.swiper');
+  const prevButton = document.querySelector('.prev-button-js-prj');
+  const nextButton = document.querySelector('.next-button-js-prj');
+  const swiperContainer = document.querySelector('.swiper-prj');
 
   if (!prevButton || !nextButton)
     return console.error('Navigation buttons not found');
@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper-prj', {
     slidesPerView: 1,
     loop: false,
     navigation: {
-      nextEl: '.next-button-js',
-      prevEl: '.prev-button-js',
+      nextEl: '.next-button-js-prj',
+      prevEl: '.prev-button-js-prj',
     },
     keyboard: {
       enabled: true,
