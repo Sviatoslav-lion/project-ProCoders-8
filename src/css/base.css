@@ -55,7 +55,7 @@ body {
   letter-spacing: -0.02em;
   color:  var(--main-text);
 
-  background-color: var(--cards);
+  background-color: var(--background);
 }
 
 h1 {
