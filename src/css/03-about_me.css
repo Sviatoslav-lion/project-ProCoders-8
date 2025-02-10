@@ -1,17 +1,3 @@
-/* Основні стилі */
-
-/* Контейнер */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* width: 343px;
-    margin-top: 64px;
-    margin-left: 32px;
-    margin-right: 32px; */
-   
-}
-
 /* Текстовий блок */
 .text-box {
     background-color: #242527;
