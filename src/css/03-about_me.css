@@ -1,52 +1,3 @@
-
-
-/* Текстовий блок */
-.text-box {
-    background-color: #242527;
-    width: 343px;
-    height: 436px;
-    border-radius: 16px;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-}
-
-.text-box p {
-    font-size: 18px;
-    line-height: 1.5;
-    border-radius: 32px;
-}
-
-.highlight {
-    color: #FAFAFA;
-    font-weight: bold;
-}
-
-.functional {
-    color: #ED3B44;
-    font-weight: bold;
-}
-
-.gray {
-    color: #FAFAFA66;
-}
-
-/* Зображення */
-.image-box {
-    margin-top: 16px;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 100%;
-    border-radius: 24px;
-}
-
-.image-box img {
-    width: 343px;
-    height: 500px;
-    border-radius: 10px;
-}
-
-
 /* ===== АККОРДЕОН ===== */
 .accordion {
     width: 343px;
@@ -63,7 +14,6 @@
     overflow: hidden;
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
-
 
 .accordion-header {
     font-family: 'Inter Tight', sans-serif;
@@ -115,42 +65,10 @@
     font-size: 16px;
 }
 
-
-
 @media screen and (min-width: 768px) {
-    .container {
-        width: 704px;
-    }
-
-    .text-box {
-        width: 704px;
-        height: 700px;
-        padding: 15px;
-    }
-
-    .text-box p {
-        font-size: 38px;
-        line-height: 40px;
-        padding: 40px;
-    }
-
-    .image-box {
-        margin-top: 16px;
-        border-radius: 10px;
-        width: 704px;
-        border-radius: 24px;
-    }
-
-    .image-box img {
-        width: 100%;
-        height: auto;
-        border-radius: 24px;
-    }
-
     .accordion {
         width: 704px;
         margin-top: 64px;
-
     }
 
     .accordion-header {
@@ -162,182 +80,29 @@
     .accordion-content {
         /* padding: 12px; */
         padding-bottom: 32px;
-
     }
-
 }
 
 
-
-
 @media screen and (min-width: 1440px) {
-    .container {
-        width: 1440px;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .text-box {
-        width: 680px;
-        height: 700px;
-        border-radius: 24px;
-        margin-top: 20px;
-        padding-top: 44px;
-        padding-left: 44px;
-    }
-
-    .text-box p {
-        font-size: 38px;
-        line-height: 40px;
-        font-weight: 500;
-        padding: 0px;
-        letter-spacing: -3%;
-        font: inter tight;
-
-
-
-    }
-
-    .image-box {
-        width: 680px;
-        height: 700px;
-    }
-
-    .image-box img {
-        width: 680px;
-        height: 700px;
-        border-radius: 24px;
-    }
-
     .accordion {
         width: 1376px;
-
-
-
     }
 
     .accordion-header {
         font-size: 14px;
         /* padding: 12px; */
-
     }
 
     .accordion-content {
         width: 50%;
         width: 612px;
-
-
-
     }
 
     .about-me-text {
-
         width: 50%;
     }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===== СЛАЙДЕР ===== */
-/* Контейнер слайдера */
-.skills-container {
-    width: 100%;
-    max-width: 343px;
-    margin: auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Центруємо контейнер */
-}
-
-/* Основний слайдер */
-.swiper {
-    flex-grow: 1;
-    padding: 20px 0;
-}
-
-/* Окремий елемент у слайдері */
-.swiper-slide {
-    display: flex;
-    justify-content: flex-start;
-    /* Вирівнюємо елементи по лівому краю */
-    align-items: center;
-    background-color: #222;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    text-align: left;
-    /* Текст буде по лівому краю всередині кола */
-    padding-left: 10px;
-    /* Додаємо відступ зліва для тексту */
-}
-
-/* Всередині кожного круга */
-.swiper-slide span {
-    display: block;
-    width: 100%;
-    /* Розтягуємо текст на всю ширину слайду */
-}
-
-/* Контейнер для стрілки */
-.swiper-button-next {
-    position: static;
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-    background: #444;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.skills-container {
-    position: relative;
-    /* Забезпечуємо, щоб кнопка була в межах контейнера */
-}
-
-.swiper-button-next {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-}
-
-.swiper-button-next svg {
-    width: 100%;
-    height: 100%;
-    fill: #3B3B3B;
-}
-
-
-
 
 .icon {
     display: none;
