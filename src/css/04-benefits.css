@@ -103,8 +103,9 @@ margin-bottom: 8px;
 
 @media screen and (min-width: 768px) {
   .benefits-container{
-    max-width: 704px;
+    max-width: 768px;
     max-height: 797px;
+    padding: 0 32px;
   }
   .benefits-components {
     gap: 64px;
@@ -120,8 +121,8 @@ margin-bottom: 8px;
     /* height: fit-content; */
   }
   .benefits-container {
-    max-width: 1376px;
-max-height: 675px;
+    max-width: 1440px;
+    max-height: 675px;
    
     flex-direction: row;
     justify-content: space-between;
