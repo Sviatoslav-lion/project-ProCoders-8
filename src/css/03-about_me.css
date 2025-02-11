@@ -297,7 +297,7 @@
     width: 369px;
   }
 }
-/* ===== СЛАЙДЕР ===== */
+/* ===== Slider Swiper API  ===== */
 .swiper-skills-container {
   display: flex;
 
@@ -338,7 +338,7 @@
   height: 28px;
 }
 .swiper-slide-active .skill-circle {
-  background-color: #ed3b44;
+  background-color: #0041e8;
 }
 
 /* Styles for Tablet devices*/

@@ -32,7 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const skillsSwiper = new Swiper('.swiper-skills', {
     slidesPerView: 2, // Два кружечки на екрані
     spaceBetween: 0,
+    loopedSlides: 6, // Дає змогу безперервно циклічно скролити всі кружечки
     loop: true, // Безкінечний скролінг
+    slidesPerGroup: 1,
+
+    slideNextClass: 'swiper-slide-next',
     speed: 400,
     keyboard: {
       enabled: true,
@@ -42,9 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       768: {
         slidesPerView: 3, // Чотири елементи на планшетах
+        slidesPerGroup: 1,
       },
       1440: {
         slidesPerView: 6, // Всі 6 кружечків на десктопі
+        slidesPerGroup: 1,
+        loopedSlides: 6, // Дає змогу безперервно циклічно скролити всі кружечки
       },
     },
   });
