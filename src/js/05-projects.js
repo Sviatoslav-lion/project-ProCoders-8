@@ -1,19 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const prevButton = document.querySelector('.prev-button-js-prj');
-  const nextButton = document.querySelector('.next-button-js-prj');
-  const swiperContainer = document.querySelector('.swiper-prj');
+  const prevButtonPrj = document.querySelector('.prev-button-js-prj');
+  const nextButtonPrj = document.querySelector('.next-button-js-prj');
+  const swiperContainerPrj = document.querySelector('.swiper-prj');
 
-  if (!prevButton || !nextButton)
+  if (!prevButtonPrj || !nextButtonPrj)
     return console.error('Navigation buttons not found');
 
-  if (!swiperContainer) {
+  if (!swiperContainerPrj) {
     console.error('Swiper container not found');
     return;
   }
 
-  const swiper = new Swiper('.swiper-prj', {
+  const swiperPrj = new Swiper('.swiper-prj', {
     slidesPerView: 1,
     loop: false,
+    speed: 800,
     navigation: {
       nextEl: '.next-button-js-prj',
       prevEl: '.prev-button-js-prj',
@@ -26,29 +27,29 @@ document.addEventListener('DOMContentLoaded', () => {
     simulateTouch: true,
     on: {
       init(swiper) {
-        updateNavigationButtons(swiper, prevButton, nextButton);
+        updateNavigationButtons(swiper, prevButtonPrj, nextButtonPrj);
       },
       slideChange(swiper) {
-        updateNavigationButtons(swiper, prevButton, nextButton);
+        updateNavigationButtons(swiper, prevButtonPrj, nextButtonPrj);
       },
     },
   });
-  function updateNavigationButtons(swiper, prevButton, nextButton) {
-    if (!swiper || !prevButton || !nextButton) return;
+  function updateNavigationButtons(swiperPrj, prevButtonPrj, nextButtonPrj) {
+    if (!swiperPrj || !prevButtonPrj || !nextButtonPrj) return;
     // requestAnimationFrame is a built-in function provided by the browser (Web API).
     // It is part of the Window API and is designed specifically for
     // handling animations and UI updates efficiently.
     requestAnimationFrame(() => {
-      const { isBeginning, isEnd } = swiper;
+      const { isBeginning, isEnd } = swiperPrj;
 
-      prevButton.disabled = isBeginning;
-      nextButton.disabled = isEnd;
+      prevButtonPrj.disabled = isBeginning;
+      nextButtonPrj.disabled = isEnd;
 
-      prevButton.classList.toggle('disabled', isBeginning);
-      nextButton.classList.toggle('disabled', isEnd);
+      prevButtonPrj.classList.toggle('disabled', isBeginning);
+      nextButtonPrj.classList.toggle('disabled', isEnd);
 
-      prevButton.setAttribute('aria-disabled', isBeginning);
-      nextButton.setAttribute('aria-disabled', isEnd);
+      prevButtonPrj.setAttribute('aria-disabled', isBeginning);
+      nextButtonPrj.setAttribute('aria-disabled', isEnd);
     });
   }
 });
