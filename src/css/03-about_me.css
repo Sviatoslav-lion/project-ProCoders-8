@@ -1,243 +1,236 @@
 /* Текстовий блок */
 .text-box {
-    background-color: #242527;
-    width: 343px;
-    height: 436px;
-    border-radius: 16px;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
+  background-color: #242527;
+  width: 343px;
+  height: 436px;
+  border-radius: 16px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .text-box p {
-
-    font-size: 18px;
-    line-height: 1.5;
-    border-radius: 32px;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 117%;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: var(--main-text);
-
-
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 32px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-text);
 }
 
 .highlight {
-    color: #FAFAFA;
-    font-weight: bold;
+  color: #fafafa;
+  font-weight: bold;
 }
 
 .functional {
-    color:#ED3B44;
-    /* font-weight: bold; */
+  color: #ed3b44;
+  /* font-weight: bold; */
 }
 
 .gray {
-    color: #FAFAFA66;
+  color: #fafafa66;
 }
 
 .avatar-conteiner {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 16px;
-    /* padding: 0 16px; */
-    max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  /* padding: 0 16px; */
+  max-width: 375px;
 }
 
-  .text-box {
-    padding: 32px;
-    width: 100%;
-    max-width: 343px;
-    border-radius: 24px;
-    overflow: hidden;
-    flex-shrink: 1;
+.text-box {
+  padding: 32px;
+  width: 100%;
+  max-width: 343px;
+  border-radius: 24px;
+  overflow: hidden;
+  flex-shrink: 1;
 }
 
-  .avatar-photo {
-    width: 100%;
-    height: auto;
-    max-width: 343px;
+.avatar-photo {
+  width: 100%;
+  height: auto;
+  max-width: 343px;
   max-height: 500px;
-    border-radius: 24px;
-    overflow: hidden;  flex-shrink: 1;
-    flex-grow: 1;
+  border-radius: 24px;
+  overflow: hidden;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
-  .avatar-photo img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 24px;
-    height: 500px;
-    width: 343px;
+.avatar-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 24px;
+  height: 500px;
+  width: 343px;
 }
 
 @media screen and (min-width: 375px) {
-.text-box,
-.avatar-photo {
-      min-width: 343px;
-    }
+  .text-box,
+  .avatar-photo {
+    min-width: 343px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-.avatar-conteiner {
-      max-width: 768px;
-      align-items: center;
-      /* padding: 0 32px;   */
+  .avatar-conteiner {
+    max-width: 768px;
+    align-items: center;
+    /* padding: 0 32px;   */
+  }
+
+  .text-box,
+  .avatar-photo {
+    min-width: 704px;
+    max-height: 700px;
+    flex-grow: 0;
+    width: 100%;
+  }
+
+  .text-box {
+    padding: 64px;
+  }
+
+  .text-box,
+  .avatar-photo img {
+    height: 700px;
+    width: 704px;
+  }
+
+  .text-box p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 105%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
 }
 
-    .text-box,
-    .avatar-photo {
-      min-width: 704px;
-      max-height: 700px;
-      flex-grow: 0;
-      width: 100%;
-    }
+@media screen and (min-width: 1440px) {
+  .avatar-conteiner {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+  }
 
-    .text-box {
-      padding: 64px;
-    }
+  .text-box,
+  .avatar-photo,
+  .avatar-photo img {
+    min-width: 680px;
+  }
 
-    .text-box,
-    .avatar-photo img {
-      height: 700px;
-      width: 704px;
-    }
-
-    .text-box p {
-        font-family: var(--font-family);
-font-weight: 500;
-font-size: 38px;
-line-height: 105%;
-letter-spacing: -0.03em;
-text-transform: uppercase;
-color: var(--main-text);
-    }
-
+  .avatar-conteiner .text-box {
+    padding: 64px;
+    width: 680px;
+  }
 }
-
-@media screen and (min-width: 1440px){
-    .avatar-conteiner {
-  max-width: 1440px;
-  display: flex;
-  flex-direction: row;
-    }
-
-    .text-box,
-    .avatar-photo,
-    .avatar-photo img {
-      min-width: 680px;
-    }
-
-    .avatar-conteiner .text-box {
-      padding: 64px;
-  width: 680px;
-    }
- }
-
 
 /* ===== АККОРДЕОН ===== */
 .accordion-about-me {
-    width: 343px;
-    margin-top: 20px;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 32px;
+  width: 343px;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 32px;
 }
 
 .accordion-item {
-    /* border-radius: 8px; */
-    /* margin-bottom: 20px; */
-    overflow: hidden;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  /* border-radius: 8px; */
+  /* margin-bottom: 20px; */
+  overflow: hidden;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 .accordion-header {
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -2%;
-    color: #FAFAFA66;
-    padding-top: 20px;
-    padding-bottom: 32px;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    font-weight: bold;
-    gap: 23px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -2%;
+  color: #fafafa66;
+  padding-top: 20px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: bold;
+  gap: 23px;
 }
 
 .accordion-content {
-    /* padding: 16px; */
-    padding-bottom: 20px;
-    display: none;
-    /* margin-top: 12px; */
-    gap: 32px;
-    font-weight: 500;
-    size: 16px;
-    line-height: 24px;
-    letter-spacing: -2%;
-    font: inter tight;
-
+  /* padding: 16px; */
+  padding-bottom: 20px;
+  display: none;
+  /* margin-top: 12px; */
+  gap: 32px;
+  font-weight: 500;
+  size: 16px;
+  line-height: 24px;
+  letter-spacing: -2%;
+  font: inter tight;
 }
 
 .about-me-text {
-    gap: 10px;
-    margin-bottom: 32px;
+  gap: 10px;
+  margin-bottom: 32px;
 
-    letter-spacing: -0.018em;
+  letter-spacing: -0.018em;
 }
 
 .role-text {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .education-text {
-    margin-top: 10px;
-
+  margin-top: 10px;
 }
 
 .accordion-item.open .accordion-content {
-    display: block;
+  display: block;
 }
 
 .arrow {
-    font-size: 16px;
-} 
+  font-size: 16px;
+}
 
 /* -- нове --*/
 .abme {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 50%;
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    background-color: inherit;
-    transition: transform 0.3s ease;
-    /* display: flex;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: inherit;
+  transition: transform 0.3s ease;
+  /* display: flex;
     align-items: center;
     justify-content: center; */
-    margin-top: 2px;
+  margin-top: 2px;
 }
 .h3 {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: rgba(250, 250, 250, 0.4);
-
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
 }
 
 .left {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 /* .active .abme{
@@ -245,206 +238,145 @@ color: var(--main-text);
 } */
 
 .aboutme-icon {
-    fill: #fafafa;
-    stroke: none;
-    width: 40px;
-    height: 40px;
+  fill: #fafafa;
+  stroke: none;
+  width: 40px;
+  height: 40px;
 }
 
 .accordion-item.open .accordion-content {
-    display: block ;
+  display: block;
 }
 .accordion-item.open .abme {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-
 
 @media screen and (min-width: 768px) {
-    .accordion-about-me {
-        width: 704px;
-        margin-top: 64px;
-        /* margin-left: 32px; */
-        margin-bottom: 64px;
-    }
+  .accordion-about-me {
+    width: 704px;
+    margin-top: 64px;
+    /* margin-left: 32px; */
+    margin-bottom: 64px;
+  }
 
-    .accordion-header {
-        font-size: 14px;
-        /* padding: 12px; */
-        padding-top: 32px;
-    }
+  .accordion-header {
+    font-size: 14px;
+    /* padding: 12px; */
+    padding-top: 32px;
+  }
 
-    .accordion-content {
-        /* padding: 12px; */
-        padding-bottom: 32px;
-
-    }
+  .accordion-content {
+    /* padding: 12px; */
+    padding-bottom: 32px;
+  }
 }
-
 
 @media screen and (min-width: 1440px) {
-    .accordion-about-me {
-        width: 1376px;
-        margin-bottom: 96px;
-    }
+  .accordion-about-me {
+    width: 1376px;
+    margin-bottom: 96px;
+  }
 
-    .accordion-header {
-        font-size: 14px;
-        /* padding: 12px; */
-    }
+  .accordion-header {
+    font-size: 14px;
+    /* padding: 12px; */
+  }
 
-    .accordion-content {
-        width: 50%;
-        width: 612px;
-    }
+  .accordion-content {
+    width: 50%;
+    width: 612px;
+  }
 
-    .left {
-        padding: 0 68px;
-    }
-    .education-text {
-        width: 464px;
-    
-    }
-    .education-text.first {
-        width: 369px;
-    }
+  .left {
+    padding: 0 68px;
+  }
+  .education-text {
+    width: 464px;
+  }
+  .education-text.first {
+    width: 369px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ===== СЛАЙДЕР ===== */
-/* Контейнер слайдера */
-/* 
-.skills-container {
-    width: 100%;
-    max-width: 343px;
-    margin: auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Центруємо контейнер */
-/* } */ 
+.swiper-skills-container {
+  display: flex;
 
-/* Основний слайдер */
-/*
-.swiper {
-    flex-grow: 1;
-    padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-*/
+.swiper-skills {
+  width: 260px;
+  height: 130px;
 
-/* Окремий елемент у слайдері */
-/*
-.swiper-slide {
-    display: flex;
-    justify-content: flex-start;*/
-    /* Вирівнюємо елементи по лівому краю */
-    /*
-    align-items: center;
-    background-color: #222;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    text-align: left;*/
-    /* Текст буде по лівому краю всередині кола */
-    /*
-    padding-left: 10px;
-    */
-    /* Додаємо відступ зліва для тексту */
-    /*
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-right: 0;
 }
-*/
-/* Всередині кожного круга */
-/*
-.swiper-slide span {
-    display: block;
-    width: 100%;*/
-    /* Розтягуємо текст на всю ширину слайду *//*
-}
-*/
+.skill-circle {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
 
-/* Контейнер для стрілки */
-/* .swiper-button-next {
-    position: static;
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-    background: #444;
-    color: white;
-    border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 130px;
+  min-height: 130px;
+
+  border-radius: 100%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.slider-button-abtme {
+  padding: 0 0;
+  background-color: transparent;
+  width: 28px;
+  height: 28px;
+}
+.swiper-slide-active .skill-circle {
+  background-color: #ed3b44;
+}
+
+/* Styles for Tablet devices*/
+@media only screen and (min-width: 768px) {
+  section {
+    padding: 48px 0;
+  }
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .swiper-skills {
+    width: 600px;
+    height: 200px;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .skill-circle {
+    min-width: 200px;
+    min-height: 200px;
+
     font-size: 20px;
-    cursor: pointer;
-}
-
-.skills-container {
-    position: relative; */
-    /* Забезпечуємо, щоб кнопка була в межах контейнера
-}
-
-.swiper-button-next {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+  .slider-button-abtme {
     width: 40px;
     height: 40px;
+  }
+  .slider-icon-abtme {
+    transform: scale(1.4);
+    transform-origin: center;
+  }
 }
-
-.swiper-button-next svg {
-    width: 100%;
-    height: 100%;
-    fill: #3B3B3B;
+@media screen and (min-width: 1440px) {
+  .swiper-skills {
+    width: 1200px;
+    height: 200px;
+  }
 }
-
-
-
-
- */
-
-
-
-
-
-
-/* 
-
-.icon {
-    display: none; */
-    /* Ховаємо всі іконки за замовчуванням */
-/* }
-
-.icon.closed {
-    display: inline-block; */
-    /* Показуємо іконку "закрити" */
-/* }
-
-.accordion-item.open .icon.closed {
-    display: none; */
-    /* Ховаємо "закрити", якщо елемент відкритий */
-/* }
-
-.accordion-item.open .icon.open {
-    display: inline-block; */
-    /* Показуємо іконку "відкрити" */
-/* } */
