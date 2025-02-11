@@ -47,7 +47,7 @@ async function initSwiper() {
   const revBtnPrevEl = document.querySelector('.reviews-prev-btn');
   const revBtnNextEl = document.querySelector('.reviews-next-btn');
 
-  const swiper = new Swiper('.reviews .swiper-reviews', {
+  const swiper = new Swiper('.swiper-reviews', {
     modules: [Navigation, Keyboard],
     direction: 'horizontal',
     spaceBetween: 16,
