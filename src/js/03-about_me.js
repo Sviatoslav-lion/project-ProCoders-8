@@ -30,32 +30,29 @@ document.addEventListener('DOMContentLoaded', function () {
 //swiper
 document.addEventListener('DOMContentLoaded', () => {
   const skillsSwiper = new Swiper('.swiper-skills', {
-    slidesPerView: 2, // Два кружечки на екрані
-    spaceBetween: 0,
-    loopedSlides: 6, // Дає змогу безперервно циклічно скролити всі кружечки
-    loop: true, // Безкінечний скролінг
-    slidesPerGroup: 1,
+    grabCursor: true,
 
-    slideNextClass: 'swiper-slide-next',
+    slidesPerView: 2,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    loop: true,
     speed: 400,
     keyboard: {
       enabled: true,
       onlyInViewport: true,
     },
-    simulateTouch: true, // Дозволяє свайпати
+    simulateTouch: true,
     breakpoints: {
       768: {
-        slidesPerView: 3, // Чотири елементи на планшетах
+        slidesPerView: 3,
         slidesPerGroup: 1,
       },
       1440: {
-        slidesPerView: 6, // Всі 6 кружечків на десктопі
+        slidesPerView: 6,
         slidesPerGroup: 1,
-        loopedSlides: 6, // Дає змогу безперервно циклічно скролити всі кружечки
       },
     },
   });
-
   const skillsSliderButton = document.querySelector('.slider-button-abtme');
   if (skillsSliderButton) {
     skillsSliderButton.addEventListener('click', () => {
