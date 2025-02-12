@@ -1,14 +1,11 @@
-
 .hero .container {
   position: relative;
   z-index: 98;
 }
-.hero.hero-grad {
+
+.hero {
   position: relative;
-  min-height: 812px;
-  padding: 32px 0;
-  padding-top: 300px;
-  padding-bottom: 32px;
+  padding: 300px 0 32px;
   background: linear-gradient(-90deg, #1c1d20 50%, #001958 68%, #0041e8 100%);
   background-size: cover;
   background-position: center;
@@ -21,118 +18,104 @@
   left: 0;
   width: 90vw;
   height: 100%;
-  background: url('/images/hero/hero-mobile.png') no-repeat left center;
-  background-size: cover;
-  background-position: center;
+  background: no-repeat left center / cover;
   z-index: 0;
 }
+
 .hero-title {
   width: 100%;
- max-height: fit-content;
+  max-height: fit-content;
   margin-bottom: 200px;
 }
+
 .hero-list {
   display: flex;
-justify-content: end;
+  justify-content: end;
   gap: 4px;
-
 }
-.hero-list-item {
+
+.hero-list-item, .hero-list-mail {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 6px 6px;
-  min-width: 37px;
+  padding: 6px;
   min-height: 37px;
   text-align: center;
 }
-.hero-list-mail {
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
-  padding: 6px 12px;
 
-  min-height: 37px;
+.hero-list-item {
+  min-width: 37px;
 }
+
+.hero-list-mail {
+  padding: 6px 12px;
+}
+
 .hero-list-link {
   font-weight: 500;
   font-size: 10px;
 }
-.hero-list-item:hover,
-.hero-list-item:focus,
-.hero-list-mail:hover,
-.hero-list-mail:focus {
+
+.hero-list-item:hover, .hero-list-item:focus,
+.hero-list-mail:hover, .hero-list-mail:focus {
   border: 1px solid #fafafa;
 }
+
 @media screen and (min-width: 375px) {
   .hero-list-link {
     font-size: 14px;
   }
 }
+
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .hero::before {
-    background: url('/images/hero/hero-mobile@2x.png') no-repeat left center;
-    background-size: cover;
-    background-position: center;
+    background-image: image-set(
+      url('/images/hero/hero-mobile.png') 1x,
+      url('/images/hero/hero-mobile@2x.png') 2x
+    );
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero::before {
-    background: url('/images/hero/hero-tablet.png') no-repeat left center;
-    background-size: cover;
+    background-image: image-set(
+      url('/images/hero/hero-tablet.png') 1x,
+      url('/images/hero/hero-tablet@2x.png') 2x
+    );
     width: 85vw;
   }
   .hero-title {
-
     width: 632px;
     margin-bottom: 187px;
   }
   .hero-list {
     gap: 8px;
   }
-  .hero-list-item {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
+  .hero-list-item, .hero-list-mail {
     padding: 14px;
-    min-width: 55px;
     min-height: 55px;
+  }
+  .hero-list-item {
+    min-width: 55px;
   }
   .hero-list-mail {
     padding: 14px 24px;
-
     min-width: 223px;
-    min-height: 55px;
   }
   .hero-list-link {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 767px) and (min-resolution: 192dpi) {
-  .hero::before {
-    background: url('/images/hero/hero-tablet@2x.png') no-repeat left center;
-    background-size: cover;
-    background-position: center;
-  }
-}
 
 @media only screen and (min-width: 1440px) {
-
   .hero::before {
-    background: url('/images/hero/hero-desktop.png') no-repeat left center;
-    background-size: cover;
+    background-image: image-set(
+      url('/images/hero/hero-desktop.png') 1x,
+      url('/images/hero/hero-desktop@2x.png') 2x
+    );
     width: 50vw;
   }
   .hero-title {
     width: 1084px;
-margin: 0 auto;
-margin-bottom: 243px;
-  }
-
-}
-@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
-  .hero::before {
-    background: url('/images/hero/hero-desktop@2x.png') no-repeat left center;
-    background-size: cover;
-    background-position: center;
+    margin: 0 auto 243px;
   }
 }
-
