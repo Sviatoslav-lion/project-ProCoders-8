@@ -7,25 +7,33 @@ document.addEventListener('DOMContentLoaded', function () {
     const aboutmeContent = item.querySelector('.accordion-content');
 
     if (index === 0) {
-      // Перший елемент залишаємо відкритим
-      aboutmeContent.style.display = 'block';
+      aboutmeContent.style.maxHeight = aboutmeContent.scrollHeight + "px";
+      aboutmeContent.style.opacity = "1";
       aboutmeIcon.style.transform = 'rotate(180deg)';
       aboutmeHeader.classList.add('active');
     } else {
-      // Інші приховуємо
-      aboutmeContent.style.display = 'none';
+      aboutmeContent.style.maxHeight = "0px";
+      aboutmeContent.style.opacity = "0";
       aboutmeIcon.style.transform = 'rotate(0deg)';
     }
 
     aboutmeHeader.addEventListener('click', function () {
-      //item.classList.toggle("open");                      // відкриваємо прихований вміст елементу
-      const isOpen = aboutmeContent.style.display === 'block'; // якщо відкрили, тоді присвоємо змінній значення видимості
-      aboutmeContent.style.display = isOpen ? 'none' : 'block';
-      aboutmeHeader.classList.toggle('active', !isOpen);
-      aboutmeIcon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+      if (aboutmeContent.style.maxHeight === "0px" || !aboutmeContent.style.maxHeight) {
+        aboutmeContent.style.maxHeight = aboutmeContent.scrollHeight + "px";
+        aboutmeContent.style.opacity = "1";
+        aboutmeIcon.style.transform = 'rotate(180deg)';
+      } else {
+        aboutmeContent.style.maxHeight = "0px";
+        aboutmeContent.style.opacity = "0";
+        aboutmeIcon.style.transform = 'rotate(0deg)';
+      }
+
+      aboutmeHeader.classList.toggle('active');
     });
   });
 });
+
+
 //
 //swiper
 document.addEventListener('DOMContentLoaded', () => {
