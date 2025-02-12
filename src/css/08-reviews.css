@@ -82,7 +82,7 @@
 }
 .reviews-text.expanded {
     -webkit-line-clamp: unset;
-    overflow: visible;
+    overflow-y: auto;
 }
 
 .reviews-swiper-btn-container {
