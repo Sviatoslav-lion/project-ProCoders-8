@@ -2,13 +2,6 @@
 //     const bgElement = document.querySelector('.hero');
 //     bgElement.style.backgroundImage = 'url("/images/hero/hero-mobile.png")';
 //   });
-
-// відкладене авантаження зображення
-window.onload = function() {
-    const bgElement = document.querySelector('.hero');
-    bgElement.style.backgroundImage = 'url("/images/hero/hero-mobile.png") no-repeat left center';
-  };
-
 import './js/01-header.js';
 import './js/02-hero.js';
 import './js/03-about_me.js';
@@ -36,3 +29,9 @@ import './js/10-menu.js';
 //         console.error("Accordion скрипт не підключено.");
 //     }
 // });
+
+// відкладене авантаження зображення
+window.onload = function() {
+    const bgElement = document.querySelector('.hero');
+    bgElement.style.backgroundImage = 'url("/images/hero/hero-mobile.png") no-repeat left center';
+  };
