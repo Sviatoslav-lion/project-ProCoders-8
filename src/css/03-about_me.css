@@ -378,6 +378,10 @@
     transform: scale(1.4);
     transform-origin: center;
   }
+
+    .swiper-wrapper {
+      padding: 0 32px;
+    }
 }
 @media screen and (min-width: 1440px) {
   .swiper-skills {
