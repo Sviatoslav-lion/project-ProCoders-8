@@ -179,6 +179,10 @@
   line-height: 24px;
   letter-spacing: -2%;
   font: inter tight;
+
+  overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .about-me-text {

@@ -7,28 +7,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const aboutmeContent = item.querySelector('.accordion-content');
 
     if (index === 0) {
-      aboutmeContent.style.maxHeight = aboutmeContent.scrollHeight + "px";
-      aboutmeContent.style.opacity = "1";
+      aboutmeContent.style.display = 'block';
+      aboutmeContent.style.maxHeight = aboutmeContent.scrollHeight + 'px';
       aboutmeIcon.style.transform = 'rotate(180deg)';
       aboutmeHeader.classList.add('active');
     } else {
-      aboutmeContent.style.maxHeight = "0px";
-      aboutmeContent.style.opacity = "0";
+      aboutmeContent.style.display = 'none';
+      aboutmeContent.style.maxHeight = '0';
       aboutmeIcon.style.transform = 'rotate(0deg)';
     }
 
     aboutmeHeader.addEventListener('click', function () {
-      if (aboutmeContent.style.maxHeight === "0px" || !aboutmeContent.style.maxHeight) {
-        aboutmeContent.style.maxHeight = aboutmeContent.scrollHeight + "px";
-        aboutmeContent.style.opacity = "1";
-        aboutmeIcon.style.transform = 'rotate(180deg)';
+      const isOpen = aboutmeContent.style.maxHeight !== '0px' && aboutmeContent.style.maxHeight !== '';
+      if (isOpen) {
+        aboutmeContent.style.maxHeight = '0';
+        setTimeout(() => aboutmeContent.style.display = 'none', 300);
       } else {
-        aboutmeContent.style.maxHeight = "0px";
-        aboutmeContent.style.opacity = "0";
-        aboutmeIcon.style.transform = 'rotate(0deg)';
+        aboutmeContent.style.display = 'block';
+        requestAnimationFrame(() => {
+          aboutmeContent.style.maxHeight = aboutmeContent.scrollHeight + 'px';
+        });
       }
-
-      aboutmeHeader.classList.toggle('active');
+      aboutmeHeader.classList.toggle('active', !isOpen);
+      aboutmeIcon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
     });
   });
 });
