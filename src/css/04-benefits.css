@@ -34,7 +34,7 @@ background-color: var(--background);
   letter-spacing: -0.32px;
   text-transform: uppercase;
   color: var(--col-benefits-title);
-  margin-block-end: 32px;
+
 }
 .benefits-components {
   display: flex;
@@ -114,6 +114,11 @@ margin-bottom: 8px;
     grid-template-columns: 344px 344px;
 
     gap: 16px;
+  }
+}
+@media screen and (max-width:1439px) {
+  .benefits-title {
+    margin-block-end: 32px;
   }
 }
 @media screen and (min-width: 1440px) {
