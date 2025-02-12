@@ -237,7 +237,6 @@
 
 .left {
   display: flex;
-  justify-content: end;
 }
 
 /* .active .abme{
@@ -280,6 +279,9 @@
     /* padding: 12px; */
     padding-bottom: 32px;
   }
+  .left {
+    justify-content: left;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -300,6 +302,7 @@
 
   .left {
     padding: 0 68px;
+    justify-content: end;
   }
   .education-text {
     width: 464px;
