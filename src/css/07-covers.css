@@ -3,7 +3,7 @@
   --mob-height: 507px;
   --mob-item-width: 283px;
   --mob-item-height: 162px;
-  --quantity: 5;
+  --quantity: 7;
   --tablet-item-width: 544px;
   --tablet-item-height: 314px;
   --tablet-width: 772px;
@@ -30,8 +30,6 @@
   z-index: 1;
 }
 .covers-container {
-  max-width: 376px;
-  max-height: 507px;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -62,10 +60,10 @@
 
 
 .covers-list {
- width: 100%;
- height: var(--mob-height);
- height: auto;
-  transform: rotate(16deg)translateY(-150px) translateX(-280px);
+ width: 100%; 
+height: var(--mob-height);
+
+  transform: rotate(16deg) translateY(-150px) translateX(-280px);
   z-index: 2;
 
 }
@@ -110,31 +108,14 @@ max-height: 162px;
 }
 
 @media screen and (min-width: 375px) {
-  .covers {
-    max-height: 507px;
-  }
-  .covers-container {
-    max-width: 772px;
-    max-height: 507px;
-  }
   .covers-item {
-    /* min-height: 314px; */
-
     min-width: calc(var(--tablet-item-width) * var(--quantity) + 560px);
   }
 }
 
 @media screen and (min-width: 768px){
-  .covers {
-    max-height: 960px;
-  }
-  .covers-container {
-    max-width: 1440px;
-    max-height: 960px;
-  }
 .covers-list {
   height: var(--tablet-height);
-  /* margin-left: -544px; */
 }
   .covers-item {
     max-height: 314px;
@@ -156,14 +137,6 @@ margin-inline-end: 37px;
 max-height: 314px;
   }
 }  @media screen and (min-width: 1440px) {
-  .covers {
-
-    max-height: 960px;
-  }
-  .covers-container {
-    max-width: 1440px;
-    max-height: 962px;
-  }
 .covers-list {
   height: var(--desktop-height);
 }
@@ -194,7 +167,7 @@ animation: run-cover 10s linear infinite;
 }
 
 
-/* --эфект для полосы  */
+/* --эффект для полосы  */
  .shine-line {
    background: linear-gradient(10deg, #0424f7 0%, #0424f7 10%, transparent 100%);
    background-color: #d4adde; 
