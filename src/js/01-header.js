@@ -10,17 +10,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   
   function toggleMenu(menu) {
-    menu.classList.toggle("is-open");
-    body.classList.toggle("no-scroll");
+    menu.classList.toggle("is-open"); 
+    
+    // Блокуємо скрол, коли хоча б одне меню відкрите
+    if (desktopMenu.classList.contains("is-open") || mobileMenu.classList.contains("is-open")) {
+      body.classList.add("no-scroll");
+    } else {
+      body.classList.remove("no-scroll");
+    }
   }
 
   
-  desktopMenuBtn?.addEventListener("click", () => toggleMenu(desktopMenu));
-
-  
+  desktopMenuBtn?.addEventListener("click", () => toggleMenu(desktopMenu)); 
   openMenuBtn?.addEventListener("click", () => toggleMenu(mobileMenu));
   closeMenuBtn?.addEventListener("click", () => toggleMenu(mobileMenu));
-
   
   menuLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
@@ -40,5 +43,24 @@ document.addEventListener("DOMContentLoaded", () => {
         toggleMenu(desktopMenu);
       }
     });
+  });
+
+  // Додаємо обробник події на кліки по документу для згортання меню при натисканні поза межами меню
+  document.addEventListener("click", (e) => {
+    // Перевіряємо, чи не був клік на відкритому меню або кнопці
+    if (
+      !desktopMenu.contains(e.target) &&
+      !desktopMenuBtn.contains(e.target) &&
+      !mobileMenu.contains(e.target) &&
+      !openMenuBtn.contains(e.target)
+    ) {
+      // Якщо клік був поза межами, закриваємо відкриті меню
+      if (desktopMenu.classList.contains("is-open")) {
+        toggleMenu(desktopMenu);
+      }
+      if (mobileMenu.classList.contains("is-open")) {
+        toggleMenu(mobileMenu);
+      }
+    }
   });
 });

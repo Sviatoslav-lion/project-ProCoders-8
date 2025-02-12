@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  height: 80px;
 }
 
 .header-logo {
@@ -102,6 +103,9 @@
   padding: 0;
   width: unset;
   height: unset;
+}
+.no-scroll {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
