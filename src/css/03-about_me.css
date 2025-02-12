@@ -160,7 +160,7 @@
   letter-spacing: -2%;
   color: #fafafa66;
   padding-top: 20px;
-  padding-bottom: 32px;
+  
   display: flex;
   justify-content: space-between;
   cursor: pointer;
@@ -173,6 +173,8 @@
   padding-bottom: 20px;
 
   /* margin-top: 12px; */
+  padding-top: 8px;
+  
   gap: 32px;
   font-weight: 500;
   size: 16px;
@@ -378,14 +380,15 @@
     transform: scale(1.4);
     transform-origin: center;
   }
-
-    .swiper-wrapper {
-      padding: 0 32px;
-    }
+  
 }
 @media screen and (min-width: 1440px) {
   .swiper-skills {
     width: 1200px;
     height: 200px;
   }
+
+.swiper-skills-container {
+  padding: 0 32px;
+}
 }
