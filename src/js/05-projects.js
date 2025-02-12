@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const swiperPrj = new Swiper('.swiper-prj', {
     slidesPerView: 1,
     loop: false,
+    spaceBetween: 30,
     speed: 800,
     navigation: {
       nextEl: '.next-button-js-prj',
@@ -26,11 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     grabCursor: true,
     simulateTouch: true,
     on: {
-      init(swiper) {
-        updateNavigationButtons(swiper, prevButtonPrj, nextButtonPrj);
+      init(swiperPrj) {
+        updateNavigationButtons(swiperPrj, prevButtonPrj, nextButtonPrj);
       },
-      slideChange(swiper) {
-        updateNavigationButtons(swiper, prevButtonPrj, nextButtonPrj);
+      slideChange(swiperPrj) {
+        updateNavigationButtons(swiperPrj, prevButtonPrj, nextButtonPrj);
       },
     },
   });

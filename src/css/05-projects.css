@@ -41,7 +41,7 @@ section {
 .projects-heading {
   margin-bottom: 32px;
 }
-.projects-card-container {
+.swiper-prj {
   margin-bottom: 32px;
 }
 /* project card -> upper part START */
@@ -169,7 +169,7 @@ focus {
     max-width: 768px;
     padding: 0 32px;
   }
-  .projects-card-container {
+  .swiper-prj {
     margin-bottom: 64px;
   }
   /* project card -> upper container START */
