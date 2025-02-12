@@ -189,7 +189,7 @@
 }
 
 .about-me-text {
-  gap: 10px;
+  gap: 32px;
   margin-bottom: 32px;
 
   letter-spacing: -0.018em;
@@ -258,6 +258,10 @@
   transform: rotate(180deg);
 }
 
+.line-break {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .accordion-about-me {
     width: 704px;
@@ -303,6 +307,10 @@
   .education-text.first {
     width: 369px;
   }
+
+    .line-break {
+      display: block;
+    }
 }
 /* ===== Slider Swiper API  ===== */
 .swiper-skills-container {
