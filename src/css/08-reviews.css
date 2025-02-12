@@ -1,5 +1,5 @@
 .reviews {
-    max-width: 375px;
+    
     margin: 0 auto;
     padding-bottom: 64px;
 }
@@ -24,12 +24,14 @@
     min-height: 302px;
     transition: transform 300ms ease-in-out, opacity 300ms ease-in-out,
         border 300ms ease-in-out;
+        cursor: pointer;
 }
 
 .reviews-swiper-slide:hover {
     border: 1px solid rgba(250, 250, 250, 0.3);
     transform: scale(1);
     opacity: 1;
+    
 }
 
 .reviews-swiper-wrapper {
@@ -69,10 +71,18 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
+    overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        flex-grow: 1;
+}
+.reviews-text.expanded {
+    -webkit-line-clamp: unset;
     overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: var(--background-hero) var(--background);
-
 }
 
 .reviews-swiper-btn-container {
@@ -130,7 +140,7 @@
 @media screen and (min-width: 768px) {
     .reviews {
         padding-bottom: 96px;
-        max-width: 768px;
+        
     }
 
     .reviews .container {
@@ -162,13 +172,8 @@
 /* Desktop  */
 @media screen and (min-width: 1440px) {
     .reviews {
-        max-width: 1440px;
+        
         padding-bottom: 164px;
     }
 }
 
-.reviews-swiper-slide {
-    flex-shrink: 0;
-   
-    min-width: 332x;
-}

@@ -39,7 +39,14 @@ async function renderReviews() {
       </li>`
     )
     .join('');
-}
+  document.querySelectorAll('.reviews-text').forEach(el => {
+    el.addEventListener('click', function () {
+        this.classList.toggle('expanded');
+    });
+});
+  }
+
+
 
 async function initSwiper() {
   await renderReviews();
