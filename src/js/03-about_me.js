@@ -7,26 +7,31 @@ document.addEventListener('DOMContentLoaded', function () {
     const aboutmeContent = item.querySelector('.accordion-content');
 
     if (index === 0) {
-      aboutmeContent.style.display = 'block';
       aboutmeContent.style.maxHeight = aboutmeContent.scrollHeight + 'px';
+      aboutmeContent.style.opacity = '1';
       aboutmeIcon.style.transform = 'rotate(180deg)';
       aboutmeHeader.classList.add('active');
     } else {
-      aboutmeContent.style.display = 'none';
       aboutmeContent.style.maxHeight = '0';
+      aboutmeContent.style.opacity = '0';
       aboutmeIcon.style.transform = 'rotate(0deg)';
     }
 
     aboutmeHeader.addEventListener('click', function () {
-      const isOpen = aboutmeContent.style.maxHeight !== '0px' && aboutmeContent.style.maxHeight !== '';
+      const isOpen = aboutmeContent.style.maxHeight !== '0px';
       if (isOpen) {
-        aboutmeContent.style.maxHeight = '0';
-        setTimeout(() => aboutmeContent.style.display = 'none', 300);
-      } else {
-        aboutmeContent.style.display = 'block';
+        aboutmeContent.style.maxHeight = aboutmeContent.scrollHeight + 'px';
+        aboutmeContent.style.opacity = '1';
         requestAnimationFrame(() => {
-          aboutmeContent.style.maxHeight = aboutmeContent.scrollHeight + 'px';
+          aboutmeContent.style.maxHeight = '0';
+          aboutmeContent.style.opacity = '0';
         });
+        setTimeout(() => {
+          aboutmeContent.style.maxHeight = '0';
+        }, 800);
+      } else {
+        aboutmeContent.style.maxHeight = aboutmeContent.scrollHeight + 'px';
+        aboutmeContent.style.opacity = '1';
       }
       aboutmeHeader.classList.toggle('active', !isOpen);
       aboutmeIcon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
