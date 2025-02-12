@@ -10,8 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   
   function toggleMenu(menu) {
-    menu.classList.toggle("is-open");
-    body.classList.toggle("no-scroll");
+    menu.classList.toggle("is-open"); 
+    
+    // Блокуємо скрол, коли хоча б одне меню відкрите
+    if (desktopMenu.classList.contains("is-open") || mobileMenu.classList.contains("is-open")) {
+      body.classList.add("no-scroll");
+    } else {
+      body.classList.remove("no-scroll");
+    }
   }
 
   
