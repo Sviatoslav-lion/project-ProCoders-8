@@ -1,0 +1,122 @@
+.header-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  padding-top: 32px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 80px;
+}
+
+.header-logo {
+  display: flex;
+  gap: 8px;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-desk-tabl-btn:hover,
+.menu-desk-tabl-btn:focus {
+  color: #0633A5;
+  outline: none;
+}
+
+.menu-item a {
+  outline: none;
+}
+
+.menu-item a:hover,
+.menu-item a:focus {
+  color: #0633A5;
+}
+
+.menu-desk-tabl-btn {
+  background-color: transparent;
+  border: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  gap: 5px;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+}
+
+.header-menu.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.order-btn {
+  display: flex;
+  border-radius: 60px;
+  padding: 15.5px 24px;
+
+  background-color: #0041E8;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  background-color: #0633A5;
+  outline: none;
+}
+
+.header-menu-mobile {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: unset;
+  height: unset;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .header-menu,
+  .order-btn,
+  .menu-desk-tabl-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-menu-mobile {
+    display: none;
+  }
+}

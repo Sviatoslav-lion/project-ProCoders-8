@@ -23,21 +23,21 @@
 @import url('./10-menu.css');
 
 /* перегляд icons */
-    .icon-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-    }
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
 
-    .icon-test svg {
-      width: 90px;
-      height: 50px;
+.icon-test svg {
+  width: 90px;
+  height: 50px;
 
-      fill: currentColor;
-    }
-    .icon-label-test {
-        margin-top: 5px;
-        font-size: 14px;
-    }
+  fill: currentColor;
+}
+.icon-label-test {
+  margin-top: 5px;
+  font-size: 14px;
+}

@@ -1,11 +1,14 @@
-  import axios from 'axios';
-  import iziToast from 'izitoast';
-  import 'izitoast/dist/css/iziToast.min.css';
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const style = document.createElement('style');
-    style.innerHTML = `
-    .footer-error-message.success {
+// import axios from 'axios'; // підключено в index.html
+// import iziToast from 'izitoast'; // підключено в index.html
+// import 'izitoast/dist/css/iziToast.min.css'; // підключено в index.html
+
+document.addEventListener('DOMContentLoaded', function () {
+ 
+  const style = document.createElement('style');
+  style.innerHTML = `
+   .footer-error-message.success {
+
       color: green;
     }
     .footer-contact-input-email.invalid {

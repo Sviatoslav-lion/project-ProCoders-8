@@ -1,5 +1,31 @@
-<header>
-    <div class="container">
-        01-header
-    </div>
+<header class="header-section">
+  <div class="container header-container">
+    <a class="header-logo" href="index.html">
+      <img src="/images/header/logo.png" alt="logo img" class="img-logo" />
+      <svg class="header-logo" width="84" height="19">
+        <use href="/images/sprite.svg#logo"></use>
+      </svg>
+</a>
+    
+    <nav class="header-nav">
+      <button class="menu-desk-tabl-btn" type="button">Menu</button>
+        <ul class="header-menu">
+          
+          <li class="menu-item item-menu-hidden"><a href="#about" rel="internal">About me</a></li>
+          <li class="menu-item item-menu-hidden"><a href="#benefits" rel="internal">Benefits</a></li>
+          <li class="menu-item item-menu-hidden"><a href="#projects" rel="internal">Projects</a></li>
+          <li class="menu-item item-menu-hidden"><a href="#faq" rel="internal">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <a class="order-btn" href="#work" rel="internal">Order the project</a>
+
+    <button type="button" class="header-menu-mobile" data-menu-open>
+
+      <svg class="menu-burger-btn" width="28" height="28">
+        <use href="/images/sprite.svg#menu"></use>
+      </svg>
+      
+    </button>
+  </div>
 </header>
