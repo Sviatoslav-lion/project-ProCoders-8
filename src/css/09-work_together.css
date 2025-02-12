@@ -1,4 +1,4 @@
- .footer-base {
+.footer-base {
    padding: 32px 0px 32px 0px;
  }
 
@@ -113,12 +113,24 @@
    border-color: #fafafa;
  }
 
- .footer-contact-info-link-email {
+  .footer-contact-info-link-email {
    width: 178px;
  }
 
  .footer-contact-info-link-phone {
    width: 118px;
+ }
+
+  @media (max-width: 320px){
+  .footer-contact-info-link {
+   font-size: 12px;
+  }
+  .footer-contact-info-link-email {
+   width: 160px;
+ }
+.footer-contact-info-link-phone {
+   width: 106px;
+ }
  }
 
  @media (min-width: 768px) {
@@ -217,7 +229,6 @@
 
    .footer-contact-list {
      width: 100%;
-
    }
  }
 
