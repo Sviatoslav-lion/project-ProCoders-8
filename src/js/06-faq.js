@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const faqItems = document.querySelectorAll(".accordion");
+  const faqItems = document.querySelectorAll(".faq-accordion");
 
   faqItems.forEach((item) => {
     const faqAnswer = item.querySelector(".faq-answer");
