@@ -123,8 +123,8 @@ justify-content: end;
   }
   .hero-title {
     width: 1084px;
-margin: 0 auto;
-margin-bottom: 243px;
+    margin: 0 auto;
+    margin-bottom: 243px;
   }
 
 }
@@ -135,4 +135,3 @@ margin-bottom: 243px;
     background-position: center;
   }
 }
-
