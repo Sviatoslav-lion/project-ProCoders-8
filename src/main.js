@@ -8,20 +8,3 @@ import './js/07-covers.js';
 import './js/08-reviews.js';
 import './js/09-work_together.js';
 import './js/10-menu.js';
-
-// ----- Технічні повідомлення ----------
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     // Перевірка підключення Swiper
-//     if (typeof Swiper !== 'undefined') {
-//         console.log("Swiper скрипт успішно підключено!");
-//     } else {
-//         console.error("Swiper скрипт не підключено.");
-//     }
-//     // Перевірка підключення Accordion
-//     if (typeof Accordion !== 'undefined') {
-//         console.log("Accordion скрипт успішно підключено!");
-//     } else {
-//         console.error("Accordion скрипт не підключено.");
-//     }
-// });
