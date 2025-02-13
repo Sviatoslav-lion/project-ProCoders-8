@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menu.classList.toggle("is-open"); 
     
     // Блокуємо скрол, коли хоча б одне меню відкрите
-    if (desktopMenu.classList.contains("is-open") || mobileMenu.classList.contains("is-open")) {
+    if (mobileMenu.classList.contains("is-open")) {
       body.classList.add("no-scroll");
     } else {
       body.classList.remove("no-scroll");
