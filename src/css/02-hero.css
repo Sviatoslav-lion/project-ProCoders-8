@@ -55,10 +55,14 @@
   font-size: 14px;
 }
 .hero-list-item:hover,
-.hero-list-item:focus,
+.hero-list-item:focus {
+  border: 1px solid #fafafa;
+  cursor: url(../images/hero/inst-icon.png), pointer;
+}
 .hero-list-mail:hover,
 .hero-list-mail:focus {
   border: 1px solid #fafafa;
+  cursor: url(../images/hero/mail-icon.png), pointer;
 }
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .hero::before {
