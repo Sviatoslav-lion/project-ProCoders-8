@@ -1,18 +1,17 @@
-/* =================================Mobile=======================*/
 .hero .container {
   position: relative;
   z-index: 98;
 }
 .hero.hero-grad {
   position: relative;
-  max-height: 812px;
+  min-height: 812px;
   padding: 32px 0;
-  width: 100vw;
+  padding-top: 300px;
+  padding-bottom: 32px;
   background: linear-gradient(-90deg, #1c1d20 50%, #001958 68%, #0041e8 100%);
   background-size: cover;
   background-position: center;
 }
-
 .hero::before {
   content: '';
   position: absolute;
@@ -27,18 +26,18 @@
 }
 .hero-title {
   width: 100%;
-  max-height: 250px;
-  margin-top: 249px;
-  margin-bottom: 212px;
+  max-height: fit-content;
+  margin-bottom: 200px;
 }
 .hero-list {
   display: flex;
+  justify-content: end;
   gap: 4px;
 }
 .hero-list-item {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 6px 6px;
+  /* padding: 6px 6px; */
   min-width: 37px;
   min-height: 37px;
   text-align: center;
@@ -46,23 +45,63 @@
 .hero-list-mail {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 6px 12px;
-  min-width: 178px;
+  /* padding: 0 12px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   min-height: 37px;
+  outline: none;
 }
 .hero-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 10px;
 }
-.hero-list-item:hover,
-.hero-list-item:focus {
+.hero-list-link-ig:hover,
+.hero-list-link-ig:focus {
   border: 1px solid #fafafa;
-  cursor: url(../images/hero/inst-icon.png), pointer;
+  cursor: url(/images/hero/inst-icon.png), pointer;
+  outline: none;
+  border: none;
 }
-.hero-list-mail:hover,
+.hero-list-link-fb:hover,
+.hero-list-link-fb:focus {
+  border: 1px solid #fafafa;
+  cursor: url(/images/hero/fb-icon.png), pointer;
+  outline: none;
+  border: none;
+}
+.hero-list-link-yt:hover,
+.hero-list-link-yt:focus {
+  border: 1px solid #fafafa;
+  cursor: url(/images/hero/yt-icon.png), pointer;
+  outline: none;
+  border: none;
+}
+.hero-list-link-git:hover,
+.hero-list-link-git:focus {
+  border: 1px solid #fafafa;
+  cursor: url(/images/hero/github-icon.png), pointer;
+  outline: none;
+  border: none;
+}
+.hero-list-link-mail:hover,
 .hero-list-mail:focus {
   border: 1px solid #fafafa;
-  cursor: url(../images/hero/mail-icon.png), pointer;
+  cursor: url(/images/hero/mail-icon.png), pointer;
+  outline: none;
+  border: none;
+}
+@media screen and (min-width: 375px) {
+  .hero-list-link {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .hero::before {
@@ -71,12 +110,8 @@
     background-position: center;
   }
 }
-/*================================/Mobile=======================*/
-/*=================================Tablet=======================*/
+
 @media only screen and (min-width: 768px) {
-  .hero.hero-grad {
-    max-height: 1024px;
-  }
   .hero::before {
     background: url('/images/hero/hero-tablet.png') no-repeat left center;
     background-size: cover;
@@ -84,24 +119,20 @@
   }
   .hero-title {
     width: 632px;
-    max-height: 450px;
-    margin-top: 268px;
     margin-bottom: 187px;
   }
   .hero-list {
     gap: 8px;
-    margin-left: 231px;
   }
   .hero-list-item {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
-    padding: 14px;
+    /* padding: 14px; */
     min-width: 55px;
     min-height: 55px;
   }
   .hero-list-mail {
-    padding: 14px 24px;
-
+    padding: 0;
+    width: auto;
+    height: auto;
     min-width: 223px;
     min-height: 55px;
   }
@@ -116,12 +147,8 @@
     background-position: center;
   }
 }
-/*=================================/Tablet=======================*/
-/*=================================Desktop=======================*/
+
 @media only screen and (min-width: 1440px) {
-  .hero.hero-grad {
-    max-height: 900px;
-  }
   .hero::before {
     background: url('/images/hero/hero-desktop.png') no-repeat left center;
     background-size: cover;
@@ -129,13 +156,8 @@
   }
   .hero-title {
     width: 1084px;
-    max-height: 270px;
-    margin-left: 146px;
+    margin: 0 auto;
     margin-bottom: 243px;
-  }
-  .hero-list {
-    margin-left: 903px;
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
@@ -145,4 +167,3 @@
     background-position: center;
   }
 }
-/*================================/Desktop======================= */
