@@ -102,12 +102,6 @@ button {
   background: var(--button-text);
 }
 
-.base-link:focus,
-.base-link:hover {
-  border-color: var(--main-text);
-  border-bottom: 2px solid var(--main-text);
-}
-
 .base-button-style {
   width: 52px;
     border-radius: 50%;
