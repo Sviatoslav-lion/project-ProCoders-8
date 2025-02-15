@@ -102,13 +102,6 @@ button {
   background: var(--button-text);
 }
 
-.base-link {
-  border-radius: 0;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s ease;
-}
-
 .base-link:focus,
 .base-link:hover {
   border-color: var(--main-text);

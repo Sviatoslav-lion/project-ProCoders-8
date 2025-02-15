@@ -26,23 +26,30 @@
   align-items: center;
 }
 
-/* .menu-desk-tabl-btn:hover,
+.menu-desk-tabl-btn:hover,
 .menu-desk-tabl-btn:focus {
-  color: #0633A5;
-  outline: none;
-} */
+  /* color: #0633A5;
+  outline: none; */
+  border-color: var(--main-text);
+  border-bottom: 2px solid var(--main-text);
+} 
 
 .menu-item a {
   outline: none;
 }
 
 .menu-desk-tabl-btn {
-  background-color: transparent;
   /*border: none; */
 
   /* font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em; */
+ 
+  background-color: transparent;
+  border-radius: 0;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
   color: var(--main-text);
 }
 
