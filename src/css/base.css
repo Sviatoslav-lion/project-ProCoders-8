@@ -103,9 +103,6 @@ button {
 }
 
 .base-link {
-  /* border: 1px solid rgba(250, 250, 250, 0.20); */
-  /* transition: text-decoration  0.3s;
-  z-index: 3;*/
   border-radius: 0;
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -115,11 +112,33 @@ button {
 .base-link:focus,
 .base-link:hover {
   border-color: var(--main-text);
-  /* text-decoration: underline;
-  text-decoration-skip-ink: none; */
-
   border-bottom: 2px solid var(--main-text);
 }
+
+.base-button-style {
+  width: 52px;
+    border-radius: 50%;
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    background-color: transparent;
+    fill: transparent;
+    stroke: var(--primary);
+    transition: border 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.base-button-style:hover {
+  border: 1px solid var(--primary);
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(250, 250, 250, 0.4);
+}
+
+/* стиль для відключеної кнопки по досягненню кінця слайдера
+/* Дизейбленные кнопки навигации */
+.base-swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {

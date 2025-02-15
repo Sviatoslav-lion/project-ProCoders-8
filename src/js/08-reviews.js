@@ -85,10 +85,10 @@ async function initSwiper() {
   function checkNavigationButtons(swiper) {
     if (revBtnPrevEl && revBtnNextEl) {
       revBtnPrevEl.classList.toggle(
-        'reviews-swiper-button-disabled',
+        'base-swiper-button-disabled',
         swiper.isBeginning
       );
-      revBtnNextEl.classList.toggle('reviews-swiper-button-disabled', swiper.isEnd);
+      revBtnNextEl.classList.toggle('base-swiper-button-disabled', swiper.isEnd);
     }
   }
 }
