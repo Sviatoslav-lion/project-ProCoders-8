@@ -1,8 +1,3 @@
-
-// import axios from 'axios'; // підключено в index.html
-// import iziToast from 'izitoast'; // підключено в index.html
-// import 'izitoast/dist/css/iziToast.min.css'; // підключено в index.html
-
 document.addEventListener('DOMContentLoaded', function () {
  
   const style = document.createElement('style');
@@ -110,12 +105,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function openModal() {
       modalBackdrop.classList.add('is-open');
+      document.body.style.overflow = 'hidden';   
       modalBackdrop.addEventListener('click', handleModalClick);
       document.addEventListener('keydown', handleEscapeKey);
     }
 
     function closeModal() {
       modalBackdrop.classList.remove('is-open');
+       document.body.style.overflow = '';
       modalBackdrop.removeEventListener('click', handleModalClick);
       document.removeEventListener('keydown', handleEscapeKey);
     }
